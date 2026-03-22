@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE VELVETEEN PROJECT | Engineering Computational Sovereignty</title>
+  <meta name="description" content="Firma de ingeniería computacional que hace que la IA cobre vida. Unimos el rigor académico de élite con el despliegue ultra-rápido para que sus datos se conviertan en agentes de cambio real.">
+  <meta name="keywords" content="AI, agentes inteligentes, ingeniería computacional, soberanía de datos, startup, sostenibilidad, Colombia, tecnología">
+  <meta property="og:title" content="THE VELVETEEN PROJECT">
+  <meta property="og:description" content="Engineering Computational Sovereignty — Hacemos que lo complejo, finalmente, se vuelva real.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background canvas -->
+  <canvas id="grid-canvas"></canvas>
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-bottom-left"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo" aria-label="The Velveteen Project Home">
+        <img src="export84.svg" alt="Velveteen Logo" class="logo-svg" width="32" height="32">
+        <span class="logo-text">VELVETEEN</span>
+      </a>
+      <div class="nav-links" role="menubar">
+        <a href="#manifiesto" class="nav-link" role="menuitem">MANIFIESTO</a>
+        <a href="#metodologia" class="nav-link" role="menuitem">METODOLOGÍA</a>
+        <a href="#soluciones" class="nav-link" role="menuitem">SOLUCIONES</a>
+        <a href="#equipo" class="nav-link" role="menuitem">EQUIPO</a>
+      </div>
+      <a href="#contacto" class="btn-primary nav-cta" id="nav-cta-btn">INICIAR PROTOCOLO</a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-hidden="true">
+    <a href="#manifiesto" class="mobile-link">MANIFIESTO</a>
+    <a href="#metodologia" class="mobile-link">METODOLOGÍA</a>
+    <a href="#soluciones" class="mobile-link">SOLUCIONES</a>
+    <a href="#equipo" class="mobile-link">EQUIPO</a>
+    <a href="#contacto" class="btn-primary" style="display:inline-block;text-align:center;margin-top:1rem;">INICIAR PROTOCOLO</a>
+  </div>
+
+  <main id="inicio">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="mono">SISTEMA ACTIVO // VELVETEEN_OS v1.0</span>
+        </div>
+
+        <div class="hero-wordmark-typo" aria-label="The Velveteen Project">
+          <div class="wordmark-lockup">
+            <svg class="wordmark-rabbit" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- geometric low-poly rabbit -->
+              <polygon points="40,10 55,2 60,18" fill="none" stroke="#57f1db" stroke-width="1.2"/>
+              <polygon points="60,10 72,2 75,18" fill="none" stroke="#57f1db" stroke-width="1.2"/>
+              <polygon points="40,10 60,18 50,28" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="60,18 75,18 68,28" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="50,28 68,28 58,42" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="40,10 50,28 30,35" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="75,18 85,32 68,28" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="30,35 50,28 42,50" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="85,32 78,50 68,28" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="42,50 58,42 55,65" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="58,42 78,50 65,65" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="30,35 42,50 22,55" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="78,50 88,58 65,65" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="42,50 55,65 38,72" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="65,65 78,72 62,80" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="55,65 65,65 60,80" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="38,72 55,80 45,90" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="62,80 78,72 72,90" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="55,80 62,80 58,95" fill="none" stroke="#57f1db" stroke-width="1"/>
+              <circle cx="46" cy="22" r="1.5" fill="#57f1db" opacity="0.8"/>
+            </svg>
+            <div class="wordmark-text">
+              <span class="wordmark-the">THE</span>
+              <span class="wordmark-name">VELVETEEN</span>
+              <span class="wordmark-project">PROJECT</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="hero-sub">ENGINEERING <span class="accent">COMPUTATIONAL</span> SOVEREIGNTY</p>
+
+        <p class="hero-description">
+          Hacemos que la IA cobre vida. Convertimos datos inertes en agentes de cambio real,<br>
+          cerrando la brecha tecnológica que nos separa de la vanguardia global.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#manifiesto" class="btn-primary" id="hero-manifesto-btn">LEER MANIFIESTO</a>
+          <a href="#soluciones" class="btn-ghost" id="hero-solutions-btn">VER SOLUCIONES →</a>
+        </div>
+
+        <div class="hero-stats" role="list">
+          <div class="stat" role="listitem">
+            <span class="stat-value mono" id="stat-latency">48ms</span>
+            <span class="stat-label">Latencia de despliegue</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" role="listitem">
+            <span class="stat-value mono" id="stat-uptime">99.97%</span>
+            <span class="stat-label">Alta disponibilidad</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" role="listitem">
+            <span class="stat-value mono" id="stat-models">12+</span>
+            <span class="stat-label">Modelos fundacionales</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="mono terminal-title">velveteen_agent.py</span>
+          </div>
+          <div class="terminal-body" id="terminal-output">
+            <div class="terminal-line">
+              <span class="mono term-prompt">$</span>
+              <span class="mono term-cmd typing-text" id="typing-text"></span>
+              <span class="cursor" id="typing-cursor">█</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ── MANIFESTO ── -->
+    <section id="manifiesto" class="section manifesto-section" aria-labelledby="manifesto-heading">
+      <div class="section-label-row">
+        <span class="mono section-tag">// 01_MANIFESTO</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <div class="manifesto-grid">
+        <div class="manifesto-text">
+          <h2 id="manifesto-heading">La matemática es un lenguaje perfecto,<br><span class="accent">pero solo cuando se implementa,<br>se vuelve humana.</span></h2>
+          <p>Al igual que en la historia de <em>El conejo de terciopelo</em>, donde un objeto solo se vuelve real cuando es amado, en la tecnología, un modelo solo se vuelve real cuando es utilizado.</p>
+          <p>Durante años, hemos visto el talento más brillante de la región desperdiciado en algoritmos que nunca abandonan el laboratorio, atrapados en la frialdad de un repositorio.</p>
+          <p><strong class="accent-text">En The Velveteen Project, invertimos ese orden.</strong> Somos una firma de ingeniería computacional que hace que la IA cobre vida. Unimos el rigor académico de élite con el despliegue ultra-rápido para que sus datos dejen de ser archivos inertes y se conviertan en agentes de cambio real.</p>
+          <p>Somos el puente entre la teoría y la operación. <strong>Hacemos que lo complejo, finalmente, se vuelva real.</strong></p>
+          <div class="manifesto-pillars">
+            <div class="pillar">
+              <span class="pillar-icon">⬡</span>
+              <span>Sostenibilidad sistémica</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">⬡</span>
+              <span>Talento local retenido</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">⬡</span>
+              <span>Brecha tecnológica cerrada</span>
+            </div>
+          </div>
+        </div>
+        <div class="manifesto-art" aria-hidden="true">
+          <div class="rabbit-art-block">
+            <svg class="rabbit-svg-art" viewBox="0 0 240 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Large geometric rabbit — inspired by the logo -->
+              <!-- Ears -->
+              <polygon points="80,20 110,4 115,55" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1.2"/>
+              <polygon points="120,20 144,4 148,55" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1.2"/>
+              <polygon points="80,20 115,55 95,65" fill="rgba(87,241,219,0.03)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="148,55 120,20 140,65" fill="rgba(87,241,219,0.03)" stroke="#57f1db" stroke-width="1"/>
+              <!-- Head -->
+              <polygon points="95,65 140,65 135,100" fill="rgba(87,241,219,0.05)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="95,65 100,100 135,100" fill="rgba(87,241,219,0.03)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="95,65 70,80 100,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="140,65 165,80 135,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <!-- Eye -->
+              <circle cx="108" cy="85" r="3" fill="#57f1db" opacity="0.9"/>
+              <circle cx="132" cy="85" r="3" fill="#57f1db" opacity="0.9"/>
+              <!-- Body -->
+              <polygon points="70,80 100,100 65,130" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="165,80 175,130 135,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="100,100 135,100 120,140" fill="rgba(87,241,219,0.06)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="65,130 100,100 80,155" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="175,130 160,155 135,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="80,155 120,140 110,180" fill="rgba(87,241,219,0.05)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="120,140 160,155 130,180" fill="rgba(87,241,219,0.05)" stroke="#57f1db" stroke-width="1"/>
+              <!-- Legs -->
+              <polygon points="80,155 60,200 100,185" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="160,155 180,200 140,185" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="100,185 110,180 105,225" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <polygon points="130,180 140,185 135,225" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
+              <!-- Tail -->
+              <circle cx="172" cy="148" r="8" fill="rgba(87,241,219,0.06)" stroke="#57f1db" stroke-width="1"/>
+              <!-- Decorative dots at vertices -->
+              <circle cx="110" cy="4" r="1.5" fill="#57f1db" opacity="0.5"/>
+              <circle cx="144" cy="4" r="1.5" fill="#57f1db" opacity="0.5"/>
+              <circle cx="60" cy="200" r="2" fill="#57f1db" opacity="0.4"/>
+              <circle cx="180" cy="200" r="2" fill="#57f1db" opacity="0.4"/>
+            </svg>
+            <p class="rabbit-caption mono">// THE VELVETEEN RABBIT<br>Un modelo solo se vuelve real<br>cuando es utilizado.</p>
+          </div>
+          <div class="manifesto-data-block">
+            <span class="mono data-label">MISIÓN</span>
+            <span class="mono data-val">Hacer que lo complejo se vuelva real.</span>
+            <span class="mono data-label">VISIÓN</span>
+            <span class="mono data-val">Soberanía computacional regional</span>
+            <span class="mono data-label">FILOSOFÍA</span>
+            <span class="mono data-val">Open-source · Sostenible · Local-first</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── METODOLOGÍA ── -->
+    <section id="metodologia" class="section methodology-section" aria-labelledby="methodology-heading">
+      <div class="section-label-row">
+        <span class="mono section-tag">// 02_METODOLOGÍA</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <h2 id="methodology-heading" class="section-title">Del Laboratorio al <span class="accent">Despliegue Real</span></h2>
+      <p class="section-subtitle">Un proceso de ingeniería riguroso, diseñado para eliminar la fricción entre la investigación y la producción.</p>
+      <div class="methodology-steps">
+        <div class="method-step reveal-item" data-step="01">
+          <div class="step-number mono">01</div>
+          <div class="step-content">
+            <h3>DIAGNÓSTICO DE DATOS</h3>
+            <p>Auditoría profunda de sus activos de datos. Identificamos cuellos de botella, silos de información y oportunidades ocultas de automatización.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="method-step reveal-item" data-step="02">
+          <div class="step-number mono">02</div>
+          <div class="step-content">
+            <h3>DISEÑO DE AGENTES</h3>
+            <p>Arquitectura de sistemas multi-agente adaptada a sus procesos. Selección del modelo fundacional óptimo: open-source o propietario.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="method-step reveal-item" data-step="03">
+          <div class="step-number mono">03</div>
+          <div class="step-content">
+            <h3>DESPLIEGUE ULTRA-RÁPIDO</h3>
+            <p>De prototipo a producción en semanas, no meses. Infraestructura cloud-native con soporte para despliegue local soberano.</p>
+          </div>
+          <div class="step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="method-step reveal-item" data-step="04">
+          <div class="step-number mono">04</div>
+          <div class="step-content">
+            <h3>MONITOREO CONTINUO</h3>
+            <p>Sistemas de observabilidad en tiempo real. Mejora continua de los modelos con sus propios datos operacionales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SOLUCIONES ── -->
+    <section id="soluciones" class="section solutions-section" aria-labelledby="solutions-heading">
+      <div class="section-label-row">
+        <span class="mono section-tag">// 03_SOLUCIONES</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <h2 id="solutions-heading" class="section-title">Cuatro Núcleos de <span class="accent">Acción Computacional</span></h2>
+      <div class="solutions-grid">
+
+        <article class="solution-card" id="sol-nucleo" aria-labelledby="sol-nucleo-title">
+          <div class="card-tag mono">NÚCLEO_01</div>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" stroke="#57f1db" stroke-width="1.5"/><rect x="8" y="8" width="16" height="16" stroke="#57f1db" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="#57f1db"/></svg>
+          </div>
+          <h3 id="sol-nucleo-title">NÚCLEO DE INGENIERÍA</h3>
+          <p>Diseño de sistemas de alta disponibilidad para modelos fundacionales. Escalabilidad sin fricción desde el laboratorio al despliegue global.</p>
+          <ul class="card-specs">
+            <li><span class="mono">→</span> Arquitectura de microservicios</li>
+            <li><span class="mono">→</span> Orquestación multi-agente</li>
+            <li><span class="mono">→</span> MLOps y CI/CD para modelos</li>
+          </ul>
+        </article>
+
+        <article class="solution-card featured" id="sol-inteligencia" aria-labelledby="sol-intel-title">
+          <div class="card-tag mono">NÚCLEO_02 // CORE</div>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2 L30 10 L30 22 L16 30 L2 22 L2 10 Z" stroke="#57f1db" stroke-width="1.5"/><path d="M16 8 L24 13 L24 19 L16 24 L8 19 L8 13 Z" stroke="#57f1db" stroke-width="1"/></svg>
+          </div>
+          <h3 id="sol-intel-title">INTELIGENCIA EN OPERACIÓN</h3>
+          <p>Transformamos silos de datos en flujos de trabajo autónomos. La IA no es una herramienta, es un agente activo que aprende de su operación.</p>
+          <ul class="card-specs">
+            <li><span class="mono">→</span> Automatización de procesos cognitivos</li>
+            <li><span class="mono">→</span> Agentes de decisión en tiempo real</li>
+            <li><span class="mono">→</span> RAG y memoria persistente</li>
+          </ul>
+          <div class="card-badge" aria-label="Most popular service">FLAGSHIP</div>
+        </article>
+
+        <article class="solution-card" id="sol-soberania" aria-labelledby="sol-sov-title">
+          <div class="card-tag mono">NÚCLEO_03</div>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="14" width="20" height="14" stroke="#57f1db" stroke-width="1.5"/><path d="M10 14 V10 C10 6.686 12.686 4 16 4 C19.314 4 22 6.686 22 10 V14" stroke="#57f1db" stroke-width="1.5"/></svg>
+          </div>
+          <h3 id="sol-sov-title">SOBERANÍA DE DATOS</h3>
+          <p>Protocolos de encriptación y despliegue local para control total sobre su activo intelectual más valioso. Su IA, en su infraestructura.</p>
+          <ul class="card-specs">
+            <li><span class="mono">→</span> On-premise deployment</li>
+            <li><span class="mono">→</span> Encriptación end-to-end</li>
+            <li><span class="mono">→</span> Cumplimiento GDPR / local</li>
+          </ul>
+        </article>
+
+        <article class="solution-card" id="sol-investigacion" aria-labelledby="sol-inv-title">
+          <div class="card-tag mono">NÚCLEO_04</div>
+          <div class="card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="13" cy="13" r="9" stroke="#57f1db" stroke-width="1.5"/><path d="M20 20 L28 28" stroke="#57f1db" stroke-width="1.5"/><path d="M8 13 H18 M13 8 V18" stroke="#57f1db" stroke-width="1"/></svg>
+          </div>
+          <h3 id="sol-inv-title">INVESTIGACIÓN APLICADA</h3>
+          <p>No solo seguimos el estado del arte; lo construimos. Puentes directos entre la academia de élite y la producción industrial.</p>
+          <ul class="card-specs">
+            <li><span class="mono">→</span> Fine-tuning de modelos privados</li>
+            <li><span class="mono">→</span> Publicaciones y transferencia</li>
+            <li><span class="mono">→</span> Alianzas universidad-industria</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── EQUIPO ── -->
+    <section id="equipo" class="section team-section" aria-labelledby="team-heading">
+      <div class="section-label-row">
+        <span class="mono section-tag">// 04_EQUIPO</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <h2 id="team-heading" class="section-title">Los Agentes <span class="accent">Detrás de los Agentes</span></h2>
+      <p class="section-subtitle">Ingenieros, científicos e investigadores unidos por una misión: cerrar la brecha tecnológica con soberanía.</p>
+
+      <div class="team-grid">
+        <div class="team-card featured-team" id="ceo-card">
+          <div class="team-photo-wrapper" aria-hidden="true">
+            <div class="team-photo-placeholder">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="10" stroke="#57f1db" stroke-width="1.5"/><path d="M4 44 C4 34 13 28 24 28 C35 28 44 34 44 44" stroke="#57f1db" stroke-width="1.5"/></svg>
+            </div>
+          </div>
+          <div class="team-info">
+            <div class="team-role mono">CHIEF EXECUTIVE OFFICER</div>
+            <h3 class="team-name">Carlos Manuel Orrego</h3>
+            <p class="team-bio">Fundador y visionario de The Velveteen Project. Ingeniero computacional con enfoque en sistemas de agentes autónomos y la democratización de la IA en Latinoamérica.</p>
+            <div class="team-tags">
+              <span class="tag">Multi-Agent Systems</span>
+              <span class="tag">LLM Engineering</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-callout">
+          <p class="mono callout-label">ESTADO DEL EQUIPO</p>
+          <h3>Construyendo el<br><span class="accent">Dream Team</span></h3>
+          <p>Buscamos ingenieros apasionados por la IA, la sostenibilidad y el impacto social. Si crees que los mejores algoritmos merecen ver la luz, tu lugar es aquí.</p>
+          <a href="#contacto" class="btn-primary" id="join-team-btn">UNIRSE AL PROYECTO</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── IMPACT / TECH ── -->
+    <section class="section impact-section" aria-label="Tecnología e impacto">
+      <div class="section-label-row">
+        <span class="mono section-tag">// 05_STACK</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <h2 class="section-title">El Stack que <span class="accent">Hace Real</span> a lo Complejo</h2>
+      <div class="tech-marquee" aria-label="Tecnologías utilizadas">
+        <div class="marquee-track">
+          <span class="mono tech-tag">GEMINI PRO</span>
+          <span class="mono tech-tag">LANGCHAIN</span>
+          <span class="mono tech-tag">FIREBASE</span>
+          <span class="mono tech-tag">VERTEX AI</span>
+          <span class="mono tech-tag">PYTHON</span>
+          <span class="mono tech-tag">FASTAPI</span>
+          <span class="mono tech-tag">DOCKER</span>
+          <span class="mono tech-tag">KUBERNETES</span>
+          <span class="mono tech-tag">TENSOR FLOW</span>
+          <span class="mono tech-tag">HUGGING FACE</span>
+          <span class="mono tech-tag">OLLAMA</span>
+          <span class="mono tech-tag">POSTGRES</span>
+          <span class="mono tech-tag">PGVECTOR</span>
+          <!-- Duplicate for infinite loop -->
+          <span class="mono tech-tag">GEMINI PRO</span>
+          <span class="mono tech-tag">LANGCHAIN</span>
+          <span class="mono tech-tag">FIREBASE</span>
+          <span class="mono tech-tag">VERTEX AI</span>
+          <span class="mono tech-tag">PYTHON</span>
+          <span class="mono tech-tag">FASTAPI</span>
+          <span class="mono tech-tag">DOCKER</span>
+          <span class="mono tech-tag">KUBERNETES</span>
+          <span class="mono tech-tag">TENSOR FLOW</span>
+          <span class="mono tech-tag">HUGGING FACE</span>
+          <span class="mono tech-tag">OLLAMA</span>
+          <span class="mono tech-tag">POSTGRES</span>
+          <span class="mono tech-tag">PGVECTOR</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contacto" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="section-label-row">
+        <span class="mono section-tag">// 06_CONTACTO</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-text">
+          <h2 id="contact-heading">¿Listo para hacer que<br><span class="accent">lo complejo se vuelva real?</span></h2>
+          <p>Cuéntenos su desafío. Nuestros agentes de ingeniería analizarán su caso y diseñarán una solución específica para su organización.</p>
+          <div class="contact-data">
+            <div class="contact-item">
+              <span class="mono contact-label">LATENCIA RESP.</span>
+              <span class="mono contact-val">&lt; 24h</span>
+            </div>
+            <div class="contact-item">
+              <span class="mono contact-label">PROTOCOLO</span>
+              <span class="mono contact-val">E2E ENCRIPTADO</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="contact-name" class="form-label mono">IDENTIFICADOR</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Su nombre completo" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label mono">EMAIL</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="correo@organizacion.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="contact-org" class="form-label mono">ORGANIZACIÓN</label>
+            <input type="text" id="contact-org" name="org" class="form-input" placeholder="Nombre de su empresa o entidad">
+          </div>
+          <div class="form-group">
+            <label for="contact-msg" class="form-label mono">DESCRIPCIÓN DEL DESAFÍO</label>
+            <textarea id="contact-msg" name="message" class="form-input form-textarea" placeholder="Describa el problema que desea resolver con IA..." required rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="contact-submit-btn">INICIAR PROTOCOLO →</button>
+          <p class="form-disclaimer mono">Sus datos se transmiten con encriptación AES-256. No compartimos su información.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="export84.svg" alt="" class="logo-svg" width="24" height="24" aria-hidden="true">
+        <span class="mono footer-brand-name">THE VELVETEEN PROJECT</span>
+      </div>
+      <p class="mono footer-tagline">ENGINEERING COMPUTATIONAL SOVEREIGNTY</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#manifiesto" class="footer-link">Manifiesto</a>
+        <a href="#soluciones" class="footer-link">Soluciones</a>
+        <a href="#equipo" class="footer-link">Equipo</a>
+        <a href="#contacto" class="footer-link">Contacto</a>
+      </nav>
+      <div class="footer-bottom">
+        <span class="mono footer-copy">© 2026 The Velveteen Project. Todos los derechos reservados.</span>
+        <span class="mono footer-sig" aria-label="System status">SYS_STATUS: <span class="accent">ONLINE</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
