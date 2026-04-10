@@ -1093,3 +1093,123 @@ ul { list-style: none; }
   background: rgba(87, 241, 219, 0.25);
   color: var(--clr-on-surface);
 }
+/* ===== MODELOS ===== */
+.modelos-section {
+  padding: 6rem 0;
+}
+
+.modelos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.modelo-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.modelo-card:hover {
+  border-color: rgba(61, 220, 151, 0.5);
+  background: rgba(61, 220, 151, 0.04);
+}
+
+/* Línea de acento superior */
+.modelo-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #3ddc97 40%, transparent);
+}
+
+.modelo-card__id {
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 1.25rem;
+}
+
+.modelo-card__icon {
+  width: 38px;
+  height: 38px;
+  border: 0.5px solid rgba(61, 220, 151, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3ddc97;
+  font-size: 15px;
+  margin-bottom: 1.25rem;
+}
+
+.modelo-card__name {
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 0.6rem;
+  letter-spacing: 0.06em;
+}
+
+.modelo-card__desc {
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 1.25rem;
+}
+
+.modelo-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.modelo-card__tags .tag {
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  padding: 3px 8px;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.modelo-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #3ddc97;
+  text-decoration: none;
+  border-bottom: 0.5px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.modelo-card__link:hover {
+  border-bottom-color: #3ddc97;
+}
+
+.modelo-card__link i {
+  font-size: 9px;
+}
+
+.modelo-card__env {
+  position: absolute;
+  bottom: 14px;
+  right: 16px;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.15);
+}
