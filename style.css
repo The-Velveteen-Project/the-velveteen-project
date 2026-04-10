@@ -1171,11 +1171,12 @@ ul { list-style: none; }
 ..hero-wordmark-typo {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 1.25rem;
 }
 
 .hero-rabbit-inline {
-  width: 250px;
+  width: 220px;
   height: auto;
   opacity: 0.85;
   flex-shrink: 0;
