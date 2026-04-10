@@ -325,7 +325,7 @@ ul { list-style: none; }
 }
 
 .hero-rabbit-inline {
-  width: 110px;
+  width: 200px;
   height: auto;
   opacity: 0.88;
   flex-shrink: 0;
