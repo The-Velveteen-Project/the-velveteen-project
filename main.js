@@ -69,92 +69,92 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // ── Terminal typing animation ───────────────────────
+  // ── Terminal typing animation (optional) ────────────
   const typingEl = document.getElementById('typing-text');
-  const termBody  = document.querySelector('.terminal-body');
+  const termBody = document.querySelector('.terminal-body');
 
-  const sequences = [
-    {
-      cmd: 'velveteen init --mode=agent --model=gemini-pro',
-      output: [
-        { text: '▶ Conectando con Velveteen OS...', cls: 'muted',   delay: 400 },
-        { text: '✓ Modelo fundacional cargado: gemini-2.0-pro',     cls: 'success', delay: 800  },
-        { text: '✓ Memoria persistente: Firebase Firestore',        cls: 'success', delay: 1100 },
-        { text: '▶ Calibrando agentes de decisión...',              cls: 'muted',   delay: 1400 },
-        { text: '✓ Pipeline activo — 3 agentes en paralelo',        cls: 'highlight', delay: 1800 },
-        { text: '▶ Desplegando endpoint de producción...',          cls: 'muted',   delay: 2100 },
-        { text: '✓ API ONLINE @ velveteen.run/v1 — 48ms latency',   cls: 'success', delay: 2500 },
-        { text: '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', cls: 'muted', delay: 2800 },
-        { text: '⬡ STATUS: LO COMPLEJO SE VOLVIÓ REAL.',           cls: 'highlight', delay: 3200 },
-      ]
-    },
-    {
-      cmd: 'velveteen analyze --target=data-silo --suggest',
-      output: [
-        { text: '▶ Escaneando silos de datos...',                   cls: 'muted',   delay: 400  },
-        { text: '✓ Encontradas 7 fuentes de datos fragmentadas',    cls: 'warning', delay: 800  },
-        { text: '▶ Calculando potencial de automatización...',      cls: 'muted',   delay: 1200 },
-        { text: '✓ Ahorro estimado: 2,400 h/año',                  cls: 'success', delay: 1600 },
-        { text: '⬡ Recomendación: Multi-Agent Workflow v3',        cls: 'highlight', delay: 2000 },
-        { text: '▶ Generando arquitectura de solución...',          cls: 'muted',   delay: 2400 },
-        { text: '✓ Blueprint listo — iniciar con: velveteen deploy',cls: 'success', delay: 2800 },
-      ]
-    },
-    {
-      cmd: 'velveteen status --all-agents',
-      output: [
-        { text: '■ AGENTE_01  [COORDINATOR]   ● ACTIVO',   cls: 'success', delay: 400  },
-        { text: '■ AGENTE_02  [RAG_RETRIEVER]  ● ACTIVO',  cls: 'success', delay: 700  },
-        { text: '■ AGENTE_03  [EXECUTOR]       ● ACTIVO',  cls: 'success', delay: 1000 },
-        { text: '■ AGENTE_04  [MONITOR]        ● ACTIVO',  cls: 'success', delay: 1300 },
-        { text: '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',   cls: 'muted',  delay: 1600 },
-        { text: 'UPTIME: 99.97% // TOKENS/S: 4,120',       cls: 'highlight', delay: 2000 },
-      ]
+  if (typingEl && termBody) {
+    const sequences = [
+      {
+        cmd: 'velveteen init --mode=agent --model=gemini-pro',
+        output: [
+          { text: '▶ Conectando con Velveteen OS...', cls: 'muted', delay: 400 },
+          { text: '✓ Modelo fundacional cargado: gemini-2.0-pro', cls: 'success', delay: 800 },
+          { text: '✓ Memoria persistente: Firebase Firestore', cls: 'success', delay: 1100 },
+          { text: '▶ Calibrando agentes de decisión...', cls: 'muted', delay: 1400 },
+          { text: '✓ Pipeline activo — 3 agentes en paralelo', cls: 'highlight', delay: 1800 },
+          { text: '▶ Desplegando endpoint de producción...', cls: 'muted', delay: 2100 },
+          { text: '✓ API ONLINE @ velveteen.run/v1 — 48ms latency', cls: 'success', delay: 2500 },
+          { text: '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', cls: 'muted', delay: 2800 },
+          { text: '⬡ STATUS: LO COMPLEJO SE VOLVIÓ REAL.', cls: 'highlight', delay: 3200 },
+        ]
+      },
+      {
+        cmd: 'velveteen analyze --target=data-silo --suggest',
+        output: [
+          { text: '▶ Escaneando silos de datos...', cls: 'muted', delay: 400 },
+          { text: '✓ Encontradas 7 fuentes de datos fragmentadas', cls: 'warning', delay: 800 },
+          { text: '▶ Calculando potencial de automatización...', cls: 'muted', delay: 1200 },
+          { text: '✓ Ahorro estimado: 2,400 h/año', cls: 'success', delay: 1600 },
+          { text: '⬡ Recomendación: Multi-Agent Workflow v3', cls: 'highlight', delay: 2000 },
+          { text: '▶ Generando arquitectura de solución...', cls: 'muted', delay: 2400 },
+          { text: '✓ Blueprint listo — iniciar con: velveteen deploy', cls: 'success', delay: 2800 },
+        ]
+      },
+      {
+        cmd: 'velveteen status --all-agents',
+        output: [
+          { text: '■ AGENTE_01  [COORDINATOR]   ● ACTIVO', cls: 'success', delay: 400 },
+          { text: '■ AGENTE_02  [RAG_RETRIEVER]  ● ACTIVO', cls: 'success', delay: 700 },
+          { text: '■ AGENTE_03  [EXECUTOR]       ● ACTIVO', cls: 'success', delay: 1000 },
+          { text: '■ AGENTE_04  [MONITOR]        ● ACTIVO', cls: 'success', delay: 1300 },
+          { text: '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', cls: 'muted', delay: 1600 },
+          { text: 'UPTIME: 99.97% // TOKENS/S: 4,120', cls: 'highlight', delay: 2000 },
+        ]
+      }
+    ];
+
+    let outputDiv = null;
+
+    function typeText(text, el, speed, cb) {
+      let i = 0;
+      const interval = setInterval(() => {
+        el.textContent += text[i++];
+        if (i >= text.length) { clearInterval(interval); if (cb) cb(); }
+      }, speed);
     }
-  ];
 
-  let seqIdx = 0;
-  let outputDiv = null;
+    function clearTerminal() {
+      if (outputDiv) outputDiv.remove();
+      typingEl.textContent = '';
+    }
 
-  function typeText(text, el, speed, cb) {
-    let i = 0;
-    const interval = setInterval(() => {
-      el.textContent += text[i++];
-      if (i >= text.length) { clearInterval(interval); if (cb) cb(); }
-    }, speed);
-  }
+    function runSequence(idx) {
+      const seq = sequences[idx % sequences.length];
+      clearTerminal();
 
-  function clearTerminal() {
-    if (outputDiv) outputDiv.remove();
-    typingEl.textContent = '';
-  }
+      typeText(seq.cmd, typingEl, 38, () => {
+        outputDiv = document.createElement('div');
+        outputDiv.className = 'term-output';
+        termBody.appendChild(outputDiv);
 
-  function runSequence(idx) {
-    const seq = sequences[idx % sequences.length];
-    clearTerminal();
+        seq.output.forEach(({ text, cls, delay }) => {
+          setTimeout(() => {
+            const line = document.createElement('div');
+            line.className = `term-out-line ${cls}`;
+            line.textContent = text;
+            outputDiv.appendChild(line);
+            requestAnimationFrame(() => requestAnimationFrame(() => line.classList.add('visible')));
+          }, delay);
+        });
 
-    typeText(seq.cmd, typingEl, 38, () => {
-      outputDiv = document.createElement('div');
-      outputDiv.className = 'term-output';
-      termBody.appendChild(outputDiv);
-
-      seq.output.forEach(({ text, cls, delay }) => {
-        setTimeout(() => {
-          const line = document.createElement('div');
-          line.className = `term-out-line ${cls}`;
-          line.textContent = text;
-          outputDiv.appendChild(line);
-          requestAnimationFrame(() => requestAnimationFrame(() => line.classList.add('visible')));
-        }, delay);
+        const totalDelay = seq.output[seq.output.length - 1].delay + 3500;
+        setTimeout(() => runSequence(idx + 1), totalDelay);
       });
+    }
 
-      const totalDelay = seq.output[seq.output.length - 1].delay + 3500;
-      setTimeout(() => runSequence(idx + 1), totalDelay);
-    });
+    setTimeout(() => runSequence(0), 1200);
   }
-
-  // Start terminal after brief pause
-  setTimeout(() => runSequence(0), 1200);
 
 
   // ── Intersection Observer for reveals ───────────────
