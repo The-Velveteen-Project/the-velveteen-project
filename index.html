@@ -31,7 +31,8 @@
       <div class="nav-links" role="menubar">
         <a href="#manifiesto" class="nav-link" role="menuitem">MANIFIESTO</a>
         <a href="#metodologia" class="nav-link" role="menuitem">METODOLOGÍA</a>
-        <a href="#soluciones" class="nav-link" role="menuitem">SOLUCIONES</a>
+        <a href="#modelos" class="nav-link" role="menuitem">MODELOS</a>
+        <a href="#capacidades" class="nav-link" role="menuitem">CAPACIDADES</a>
         <a href="#equipo" class="nav-link" role="menuitem">EQUIPO</a>
       </div>
       <a href="#contacto" class="btn-primary nav-cta" id="nav-cta-btn">INICIAR PROTOCOLO</a>
@@ -45,7 +46,8 @@
   <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-hidden="true">
     <a href="#manifiesto" class="mobile-link">MANIFIESTO</a>
     <a href="#metodologia" class="mobile-link">METODOLOGÍA</a>
-    <a href="#soluciones" class="mobile-link">SOLUCIONES</a>
+    <a href="#modelos" class="mobile-link">MODELOS</a>
+    <a href="#capacidades" class="mobile-link">CAPACIDADES</a>
     <a href="#equipo" class="mobile-link">EQUIPO</a>
     <a href="#contacto" class="btn-primary" style="display:inline-block;text-align:center;margin-top:1rem;">INICIAR PROTOCOLO</a>
   </div>
@@ -80,7 +82,7 @@
 
         <div class="hero-ctas">
           <a href="#manifiesto" class="btn-primary" id="hero-manifesto-btn">LEER MANIFIESTO</a>
-          <a href="#soluciones" class="btn-ghost" id="hero-solutions-btn">VER SOLUCIONES →</a>
+          <a href="#modelos" class="btn-ghost" id="hero-solutions-btn">VER MODELOS →</a>
         </div>
 
         <div class="hero-stats" role="list">
@@ -246,72 +248,54 @@
       </div>
     </section>
 
-    <!-- ── SOLUCIONES ── -->
-    <section id="soluciones" class="section solutions-section" aria-labelledby="solutions-heading">
+    <!-- // 03_MODELOS -->
+    <section id="modelos" class="section modelos-section" aria-labelledby="modelos-heading">
       <div class="section-label-row">
-        <span class="mono section-tag">// 03_SOLUCIONES</span>
+        <span class="mono section-tag">// 03_MODELOS</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
-      <h2 id="solutions-heading" class="section-title">Cuatro Núcleos de <span class="accent">Acción Computacional</span></h2>
-      <div class="solutions-grid">
-
-        <article class="solution-card" id="sol-nucleo" aria-labelledby="sol-nucleo-title">
-          <div class="card-tag mono">NÚCLEO_01</div>
-          <div class="card-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" stroke="#57f1db" stroke-width="1.5"/><rect x="8" y="8" width="16" height="16" stroke="#57f1db" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="#57f1db"/></svg>
+      <h2 id="modelos-heading" class="section-title">Modelos en Producción</h2>
+      <div class="modelos-grid">
+        <div class="modelo-card">
+          <div class="modelo-card__id">MODELO_01 // ACTIVO</div>
+          <div class="modelo-card__icon">
+            <i class="fa-solid fa-chart-line"></i>
           </div>
-          <h3 id="sol-nucleo-title">NÚCLEO DE INGENIERÍA</h3>
-          <p>Diseño de sistemas de alta disponibilidad para modelos fundacionales. Escalabilidad sin fricción desde el laboratorio al despliegue global.</p>
-          <ul class="card-specs">
-            <li><span class="mono">→</span> Arquitectura de microservicios</li>
-            <li><span class="mono">→</span> Orquestación multi-agente</li>
-            <li><span class="mono">→</span> MLOps y CI/CD para modelos</li>
-          </ul>
-        </article>
-
-        <article class="solution-card featured" id="sol-inteligencia" aria-labelledby="sol-intel-title">
-          <div class="card-tag mono">NÚCLEO_02 // CORE</div>
-          <div class="card-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2 L30 10 L30 22 L16 30 L2 22 L2 10 Z" stroke="#57f1db" stroke-width="1.5"/><path d="M16 8 L24 13 L24 19 L16 24 L8 19 L8 13 Z" stroke="#57f1db" stroke-width="1"/></svg>
+          <h3 class="modelo-card__name">STOCHASTO</h3>
+          <p class="modelo-card__desc">
+            Plataforma de simulación y análisis basada en procesos estocásticos
+            para el estudio de variables aleatorias y modelos probabilísticos.
+          </p>
+          <div class="modelo-card__tags">
+            <span class="tag">STOCHASTIC PROCESSES</span>
+            <span class="tag">PROBABILISTIC MODELS</span>
+            <span class="tag">SIMULATION</span>
           </div>
-          <h3 id="sol-intel-title">INTELIGENCIA EN OPERACIÓN</h3>
-          <p>Transformamos silos de datos en flujos de trabajo autónomos. La IA no es una herramienta, es un agente activo que aprende de su operación.</p>
-          <ul class="card-specs">
-            <li><span class="mono">→</span> Automatización de procesos cognitivos</li>
-            <li><span class="mono">→</span> Agentes de decisión en tiempo real</li>
-            <li><span class="mono">→</span> RAG y memoria persistente</li>
-          </ul>
-          <div class="card-badge" aria-label="Most popular service">FLAGSHIP</div>
-        </article>
-
-        <article class="solution-card" id="sol-soberania" aria-labelledby="sol-sov-title">
-          <div class="card-tag mono">NÚCLEO_03</div>
-          <div class="card-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="6" y="14" width="20" height="14" stroke="#57f1db" stroke-width="1.5"/><path d="M10 14 V10 C10 6.686 12.686 4 16 4 C19.314 4 22 6.686 22 10 V14" stroke="#57f1db" stroke-width="1.5"/></svg>
+          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> INICIAR DEMO →
+          </a>
+          <span class="modelo-card__env">VERCEL_DEPLOY</span>
+        </div>
+        <div class="modelo-card">
+          <div class="modelo-card__id">MODELO_02 // ACTIVO</div>
+          <div class="modelo-card__icon">
+            <i class="fa-solid fa-leaf"></i>
           </div>
-          <h3 id="sol-sov-title">SOBERANÍA DE DATOS</h3>
-          <p>Protocolos de encriptación y despliegue local para control total sobre su activo intelectual más valioso. Su IA, en su infraestructura.</p>
-          <ul class="card-specs">
-            <li><span class="mono">→</span> On-premise deployment</li>
-            <li><span class="mono">→</span> Encriptación end-to-end</li>
-            <li><span class="mono">→</span> Cumplimiento GDPR / local</li>
-          </ul>
-        </article>
-
-        <article class="solution-card" id="sol-investigacion" aria-labelledby="sol-inv-title">
-          <div class="card-tag mono">NÚCLEO_04</div>
-          <div class="card-icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="13" cy="13" r="9" stroke="#57f1db" stroke-width="1.5"/><path d="M20 20 L28 28" stroke="#57f1db" stroke-width="1.5"/><path d="M8 13 H18 M13 8 V18" stroke="#57f1db" stroke-width="1"/></svg>
+          <h3 class="modelo-card__name">ECO-AGENT</h3>
+          <p class="modelo-card__desc">
+            Sistema multi-agente diseñado para la modelación de dinámicas
+            ecológicas y la simulación de interacciones en entornos complejos.
+          </p>
+          <div class="modelo-card__tags">
+            <span class="tag">MULTI-AGENT</span>
+            <span class="tag">ECOLOGICAL DYNAMICS</span>
+            <span class="tag">SIMULATION</span>
           </div>
-          <h3 id="sol-inv-title">INVESTIGACIÓN APLICADA</h3>
-          <p>No solo seguimos el estado del arte; lo construimos. Puentes directos entre la academia de élite y la producción industrial.</p>
-          <ul class="card-specs">
-            <li><span class="mono">→</span> Fine-tuning de modelos privados</li>
-            <li><span class="mono">→</span> Publicaciones y transferencia</li>
-            <li><span class="mono">→</span> Alianzas universidad-industria</li>
-          </ul>
-        </article>
-
+          <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> INICIAR DEMO →
+          </a>
+          <span class="modelo-card__env">VERCEL_DEPLOY</span>
+        </div>
       </div>
     </section>
 
@@ -436,65 +420,25 @@
       </div>
     </section>
 
+    <!-- // 07_CAPACIDADES -->
+    <section id="capacidades" class="section capabilities-section" aria-labelledby="capabilities-heading">
+      <div class="section-label-row">
+        <span class="mono section-tag">// 07_CAPACIDADES</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <h2 id="capabilities-heading" class="section-title">Stack de Capacidades</h2>
+      <ul class="capabilities-list mono" aria-label="Stack de Capacidades">
+        <li><span class="mono">→</span> Arquitectura de microservicios y orquestación multi-agente</li>
+        <li><span class="mono">→</span> MLOps y CI/CD para modelos fundacionales</li>
+        <li><span class="mono">→</span> Automatización de procesos cognitivos y agentes de decisión</li>
+        <li><span class="mono">→</span> RAG, memoria persistente y flujos de trabajo autónomos</li>
+        <li><span class="mono">→</span> On-premise deployment y encriptación end-to-end</li>
+        <li><span class="mono">→</span> Fine-tuning de modelos privados y transferencia académica</li>
+      </ul>
+    </section>
   </main>
   <!-- Font Awesome — agrégalo en el <head> si no lo tienes ya -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- // 07_MODELOS -->
-<section id="modelos" class="section modelos-section">
-  <div class="container">
-    <div class="section-label">// 07_MODELOS</div>
-    <h2 class="section-title">Modelos en Producción</h2>
-
-    <div class="modelos-grid">
-
-      <!-- MODELO 01 — STOCHASTO -->
-      <div class="modelo-card">
-        <div class="modelo-card__id">MODELO_01 // ACTIVO</div>
-        <div class="modelo-card__icon">
-          <i class="fa-solid fa-chart-line"></i>
-        </div>
-        <h3 class="modelo-card__name">STOCHASTO</h3>
-        <p class="modelo-card__desc">
-          Plataforma de simulación y análisis basada en procesos estocásticos
-          para el estudio de variables aleatorias y modelos probabilísticos.
-        </p>
-        <div class="modelo-card__tags">
-          <span class="tag">STOCHASTIC PROCESSES</span>
-          <span class="tag">PROBABILISTIC MODELS</span>
-          <span class="tag">SIMULATION</span>
-        </div>
-        <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> INICIAR DEMO →
-        </a>
-        <span class="modelo-card__env">VERCEL_DEPLOY</span>
-      </div>
-
-      <!-- MODELO 02 — ECO-AGENT -->
-      <div class="modelo-card">
-        <div class="modelo-card__id">MODELO_02 // ACTIVO</div>
-        <div class="modelo-card__icon">
-          <i class="fa-solid fa-leaf"></i>
-        </div>
-        <h3 class="modelo-card__name">ECO-AGENT</h3>
-        <p class="modelo-card__desc">
-          Sistema multi-agente diseñado para la modelación de dinámicas
-          ecológicas y la simulación de interacciones en entornos complejos.
-        </p>
-        <div class="modelo-card__tags">
-          <span class="tag">MULTI-AGENT</span>
-          <span class="tag">ECOLOGICAL DYNAMICS</span>
-          <span class="tag">SIMULATION</span>
-        </div>
-        <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> INICIAR DEMO →
-        </a>
-        <span class="modelo-card__env">VERCEL_DEPLOY</span>
-      </div>
-
-    </div>
-  </div>
-</section>
   <!-- ── FOOTER ── -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
@@ -505,7 +449,8 @@
       <p class="mono footer-tagline">ENGINEERING COMPUTATIONAL SOVEREIGNTY</p>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="#manifiesto" class="footer-link">Manifiesto</a>
-        <a href="#soluciones" class="footer-link">Soluciones</a>
+        <a href="#modelos" class="footer-link">Modelos</a>
+        <a href="#capacidades" class="footer-link">Capacidades</a>
         <a href="#equipo" class="footer-link">Equipo</a>
         <a href="#contacto" class="footer-link">Contacto</a>
       </nav>
