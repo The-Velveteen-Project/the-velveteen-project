@@ -14,17 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.capabilities": "CAPABILITIES",
       "nav.founder": "FOUNDER",
       "nav.cta": "DISCUSS A PROBLEM",
+      "nav.menu": "Toggle mobile menu",
       "hero.eyebrow": "SYSTEM STATUS // FOUNDER-LED LAB",
       "hero.sub": "APPLIED <span class=\"accent\">DECISION</span> SYSTEMS LAB",
       "hero.desc": "We build tools that combine mathematical modeling, machine learning, NLP, and agentic workflows to make complex decisions more understandable and more actionable.",
       "hero.read_manifesto": "READ MANIFESTO",
       "hero.view_projects": "VIEW PROJECTS →",
-      "hero.stat.modeling": "MODELING",
-      "hero.stat.modeling_label": "Mathematical core",
-      "hero.stat.ml": "ML + NLP",
-      "hero.stat.ml_label": "Applied pipelines",
-      "hero.stat.agents": "AGENTS",
-      "hero.stat.agents_label": "Workflow orchestration",
+      "hero.stat.modeling": "Mathematical modeling",
+      "hero.stat.modeling_label": "Analytical core",
+      "hero.stat.ml": "ML + NLP systems",
+      "hero.stat.ml_label": "Interpretable pipelines",
+      "hero.stat.agents": "Agents",
+      "hero.stat.agents_label": "Orchestrated reasoning",
+      "hero.graph.subnote": "Models frame uncertainty. Systems expose decisions.",
       "graph.label": "// DECISION GRAPH · RESOLVING",
       "graph.problem": "PROBLEM",
       "graph.frame": "frame",
@@ -57,7 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "manifesto.data.vision_val": "Build decision systems worth trusting.",
       "manifesto.data.phil_lbl": "PHILOSOPHY",
       "manifesto.data.phil_val": "Research-driven · Founder-led · Deployable",
-      "section.method": "// 02_METHOD",
+      "section.projects": "// 02_PROJECTS",
+      "section.method": "// 03_METHOD",
       "method.heading": "From Analytical Core to <span class=\"accent\">Usable System</span>",
       "method.sub": "A practical process for turning complex ideas into tools that can actually support real decisions.",
       "method.s1.h": "FRAME THE DECISION",
@@ -68,14 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
       "method.s3.p": "We add interfaces, retrieval, orchestration, or agentic components only where they improve usability, reasoning, or execution.",
       "method.s4.h": "TEST FOR USEFULNESS",
       "method.s4.p": "We evaluate not only performance, but interpretability, robustness, and whether the system actually helps people decide or act better.",
-      "section.projects": "// 03_PROJECTS",
       "projects.heading": "Selected Projects",
       "proj.eco.name": "ECOAGENT",
       "proj.eco.id": "PROJECT_01 // DEPLOYED",
       "proj.eco.desc": "AI-powered stochastic climate risk platform for real-time landslide risk prediction.",
-      "proj.eco.prob": "PROBLEM: Static risk maps fail when conditions change rapidly.",
-      "proj.eco.core": "CORE: CIR stochastic model for soil moisture + real-time weather reasoning.",
-      "proj.eco.integ": "INTEGRITY: Production architecture separating deterministic models from LLM orchestration. Tool-first anti-hallucination approach.",
+      "proj.eco.prob_lbl": "PROBLEM",
+      "proj.eco.prob": "Static risk maps fail when conditions change rapidly.",
+      "proj.eco.core_lbl": "CORE",
+      "proj.eco.core": "CIR stochastic model for soil moisture + real-time weather reasoning.",
+      "proj.eco.integ_lbl": "INTEGRITY",
+      "proj.eco.integ": "Production architecture separating deterministic models from LLM orchestration. Tool-first anti-hallucination approach.",
       "proj.eco.tag1": "STOCHASTIC DIFFERENTIAL EQUATIONS",
       "proj.eco.tag2": "AGENTIC ORCHESTRATION",
       "proj.eco.tag3": "TELEGRAM + MULTIMODAL",
@@ -83,9 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "proj.stoc.name": "STOCHASTOGREEN",
       "proj.stoc.id": "PROJECT_02 // RESEARCH",
       "proj.stoc.desc": "Climate transition risk simulator for financial portfolios.",
-      "proj.stoc.prob": "PROBLEM: Existing transition models are opaque, hard to update, and lack transparent reasoning.",
-      "proj.stoc.core": "CORE: Merton jump-diffusion model mapping climate beta via deterministic simulation.",
-      "proj.stoc.integ": "INTEGRITY: Math engine and AI layer intentionally decoupled. The LLM interprets the trajectory; it never computes the math.",
+      "proj.stoc.prob_lbl": "PROBLEM",
+      "proj.stoc.prob": "Existing transition models are opaque, hard to update, and lack transparent reasoning.",
+      "proj.stoc.core_lbl": "CORE",
+      "proj.stoc.core": "Merton jump-diffusion model mapping climate beta via deterministic simulation.",
+      "proj.stoc.integ_lbl": "INTEGRITY",
+      "proj.stoc.integ": "Math engine and AI layer intentionally decoupled. The LLM interprets the trajectory; it never computes the math.",
       "proj.stoc.tag1": "QUANTITATIVE RISK",
       "proj.stoc.tag2": "FASTAPI ORCHESTRATION",
       "proj.stoc.tag3": "MULTI-AGENT INTERPRETATION",
@@ -122,6 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact.form.msg": "PROBLEM DESCRIPTION",
       "contact.form.btn": "START THE CONVERSATION →",
       "contact.form.disc": "Just enough context to understand the problem. No spam, no theatrics.",
+      "contact.form.name.ph": "Your full name",
+      "contact.form.email.ph": "you@organization.com",
+      "contact.form.org.ph": "Company, lab, or institution",
+      "contact.form.msg.ph": "...",
       "section.cap": "// 07_CAPABILITIES",
       "cap.heading": "What I Build",
       "cap.l1": "→ Applied decision systems",
@@ -142,17 +154,19 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.capabilities": "CAPACIDADES",
       "nav.founder": "FUNDADOR",
       "nav.cta": "DISCUTIR UN PROBLEMA",
+      "nav.menu": "Alternar menú",
       "hero.eyebrow": "ESTADO DEL SISTEMA // LAB FUNDADOR",
       "hero.sub": "LABORATORIO DE SISTEMAS DE <span class=\"accent\">DECISIÓN</span> APLICADA",
       "hero.desc": "Construimos herramientas que combinan modelado matemático, aprendizaje automático, procesamiento de lenguaje natural (NLP) y flujos de trabajo con agentes para hacer decisiones complejas más comprensibles y más accionables.",
       "hero.read_manifesto": "LEER MANIFIESTO",
       "hero.view_projects": "VER PROYECTOS →",
-      "hero.stat.modeling": "MODELADO",
-      "hero.stat.modeling_label": "Núcleo matemático",
-      "hero.stat.ml": "ML + NLP",
-      "hero.stat.ml_label": "Pipelines aplicados",
-      "hero.stat.agents": "AGENTES",
-      "hero.stat.agents_label": "Orquestación de flujos",
+      "hero.stat.modeling": "Modelado matemático",
+      "hero.stat.modeling_label": "Núcleo analítico",
+      "hero.stat.ml": "Sistemas de ML + NLP",
+      "hero.stat.ml_label": "Pipelines interpretables",
+      "hero.stat.agents": "Agentes",
+      "hero.stat.agents_label": "Razonamiento orquestado",
+      "hero.graph.subnote": "Los modelos enmarcan la incertidumbre. Los sistemas exponen decisiones.",
       "graph.label": "// GRAFO DE DECISIÓN · RESOLVIENDO",
       "graph.problem": "PROBLEMA",
       "graph.frame": "marco",
@@ -185,7 +199,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "manifesto.data.vision_val": "Construir sistemas de decisión confiables.",
       "manifesto.data.phil_lbl": "FILOSOFÍA",
       "manifesto.data.phil_val": "Basado en investigación · Liderado por fundador · Desplegable",
-      "section.method": "// 02_MÉTODO",
+      "section.projects": "// 02_PROYECTOS",
+      "section.method": "// 03_MÉTODO",
       "method.heading": "Del Núcleo Analítico al <span class=\"accent\">Sistema Utilizable</span>",
       "method.sub": "Un proceso práctico para convertir ideas complejas en herramientas que puedan apoyar decisiones reales.",
       "method.s1.h": "ENMARCAR LA DECISIÓN",
@@ -196,14 +211,16 @@ document.addEventListener('DOMContentLoaded', () => {
       "method.s3.p": "Añadimos interfaces, recuperación (retrieval), orquestación o componentes con agentes solo donde mejoran la usabilidad, el razonamiento o la ejecución.",
       "method.s4.h": "PROBAR SU UTILIDAD",
       "method.s4.p": "Evaluamos no solo el rendimiento, sino la interpretabilidad, la robustez y si el sistema realmente ayuda a las personas a decidir o actuar mejor.",
-      "section.projects": "// 03_PROYECTOS",
       "projects.heading": "Proyectos Seleccionados",
       "proj.eco.name": "ECOAGENT",
       "proj.eco.id": "PROYECTO_01 // DESPLEGADO",
       "proj.eco.desc": "Plataforma estocástica de riesgo climático asistida por IA para la predicción de riesgo de deslizamientos en tiempo real.",
-      "proj.eco.prob": "PROBLEMA: Los mapas de riesgo estáticos fallan cuando las condiciones cambian rápidamente.",
-      "proj.eco.core": "NÚCLEO: Modelo estocástico CIR para la humedad del suelo + razonamiento meteorológico en tiempo real.",
-      "proj.eco.integ": "INTEGRIDAD: Arquitectura de producción separando modelos deterministas de la orquestación de LLMs. Enfoque anti-alucinación centrado en herramientas.",
+      "proj.eco.prob_lbl": "PROBLEMA",
+      "proj.eco.prob": "Los mapas de riesgo estáticos fallan cuando las condiciones cambian rápidamente.",
+      "proj.eco.core_lbl": "NÚCLEO",
+      "proj.eco.core": "Modelo estocástico CIR para la humedad del suelo + razonamiento meteorológico en tiempo real.",
+      "proj.eco.integ_lbl": "INTEGRIDAD",
+      "proj.eco.integ": "Arquitectura de producción separando modelos deterministas de la orquestación de LLMs. Enfoque anti-alucinación centrado en herramientas.",
       "proj.eco.tag1": "ECUACIONES DIFERENCIALES ESTOCÁSTICAS",
       "proj.eco.tag2": "ORQUESTACIÓN DE AGENTES",
       "proj.eco.tag3": "TELEGRAM + MULTIMODAL",
@@ -211,9 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
       "proj.stoc.name": "STOCHASTOGREEN",
       "proj.stoc.id": "PROYECTO_02 // INVESTIGACIÓN",
       "proj.stoc.desc": "Simulador de riesgo de transición climática para carteras financieras.",
-      "proj.stoc.prob": "PROBLEMA: Los modelos de transición existentes son opacos, difíciles de actualizar y carecen de razonamiento transparente.",
-      "proj.stoc.core": "NÚCLEO: Modelo de salto y difusión de Merton mapeando beta climático a través de simulación determinista.",
-      "proj.stoc.integ": "INTEGRIDAD: Motor matemático y capa de IA intencionalmente desacoplados. El LLM interpreta la trayectoria; nunca calcula las matemáticas.",
+      "proj.stoc.prob_lbl": "PROBLEMA",
+      "proj.stoc.prob": "Los modelos de transición existentes son opacos, difíciles de actualizar y carecen de razonamiento transparente.",
+      "proj.stoc.core_lbl": "NÚCLEO",
+      "proj.stoc.core": "Modelo de salto y difusión de Merton mapeando beta climático a través de simulación determinista.",
+      "proj.stoc.integ_lbl": "INTEGRIDAD",
+      "proj.stoc.integ": "Motor matemático y capa de IA intencionalmente desacoplados. El LLM interpreta la trayectoria; nunca calcula las matemáticas.",
       "proj.stoc.tag1": "RIESGO CUANTITATIVO",
       "proj.stoc.tag2": "FASTAPI",
       "proj.stoc.tag3": "INTERPRETACIÓN MULTIAGENTE",
@@ -250,6 +270,10 @@ document.addEventListener('DOMContentLoaded', () => {
       "contact.form.msg": "DESCRIPCIÓN DEL PROBLEMA",
       "contact.form.btn": "INICIAR LA CONVERSACIÓN →",
       "contact.form.disc": "Solo el contexto necesario para entender el problema. Sin spam, sin teatralidad.",
+      "contact.form.name.ph": "Tu nombre completo",
+      "contact.form.email.ph": "tu@organizacion.com",
+      "contact.form.org.ph": "Empresa, laboratorio o institución",
+      "contact.form.msg.ph": "...",
       "section.cap": "// 07_CAPACIDADES",
       "cap.heading": "Lo Que Construyo",
       "cap.l1": "→ Sistemas de decisión aplicada",
@@ -287,6 +311,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = el.getAttribute('data-i18n');
       if (key && dict[key]) {
         el.innerHTML = dict[key];
+      }
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (key && dict[key]) {
+        el.setAttribute('placeholder', dict[key]);
+      }
+    });
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+      const key = el.getAttribute('data-i18n-aria');
+      if (key && dict[key]) {
+        el.setAttribute('aria-label', dict[key]);
       }
     });
   }
@@ -346,21 +382,63 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileDrawer  = document.getElementById('mobile-drawer');
 
-  mobileMenuBtn?.addEventListener('click', () => {
-    const open = mobileMenuBtn.classList.toggle('open');
-    mobileDrawer.classList.toggle('open', open);
-    mobileMenuBtn.setAttribute('aria-expanded', open);
-    mobileDrawer.setAttribute('aria-hidden', !open);
+  let focusables = [];
+  let firstFocusable = null;
+  let lastFocusable = null;
+
+  function updateFocusables() {
+    focusables = mobileDrawer.querySelectorAll('a[href], button:not([disabled])');
+    firstFocusable = focusables[0];
+    lastFocusable = focusables[focusables.length - 1];
+  }
+
+  function toggleMobileMenu() {
+    const isOpen = mobileMenuBtn.classList.toggle('open');
+    mobileDrawer.classList.toggle('open', isOpen);
+    mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+    
+    if (isOpen) {
+      mobileDrawer.setAttribute('aria-hidden', 'false');
+      mobileDrawer.setAttribute('aria-modal', 'true');
+      mobileDrawer.setAttribute('role', 'dialog');
+      updateFocusables();
+      if (firstFocusable) firstFocusable.focus();
+    } else {
+      mobileDrawer.setAttribute('aria-hidden', 'true');
+      mobileMenuBtn.focus();
+    }
+  }
+
+  mobileMenuBtn?.addEventListener('click', toggleMobileMenu);
+
+  document.querySelectorAll('.mobile-link, .mobile-drawer .btn-primary, .mobile-drawer .lang-btn').forEach(link => {
+    link.addEventListener('click', () => {
+      if (mobileMenuBtn.classList.contains('open')) {
+        toggleMobileMenu();
+      }
+    });
   });
 
-  // Close on nav link click
-  document.querySelectorAll('.mobile-link, .mobile-drawer .btn-primary').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenuBtn.classList.remove('open');
-      mobileDrawer.classList.remove('open');
-      mobileMenuBtn.setAttribute('aria-expanded', 'false');
-      mobileDrawer.setAttribute('aria-hidden', 'true');
-    });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenuBtn.classList.contains('open')) {
+      toggleMobileMenu();
+    }
+  });
+
+  mobileDrawer?.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab') return;
+    updateFocusables();
+    if (e.shiftKey) {
+      if (document.activeElement === firstFocusable) {
+        lastFocusable.focus();
+        e.preventDefault();
+      }
+    } else {
+      if (document.activeElement === lastFocusable) {
+        firstFocusable.focus();
+        e.preventDefault();
+      }
+    }
   });
 
 
@@ -502,9 +580,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
-    // Simulate async submission (replace with real endpoint)
-    await new Promise(r => setTimeout(r, 1600));
-
+    // Form endpoint ready. Swap with fetch to your submission service.
     submitBtn.textContent = '✓ MESSAGE SENT';
     submitBtn.style.background = '#64e891';
     submitBtn.style.color = '#001a09';

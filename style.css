@@ -462,6 +462,13 @@ ul { list-style: none; }
   box-shadow: 0 4px 24px rgba(0,0,0,0.2);
 }
 
+.graph-subnote {
+  font-size: 0.75rem;
+  color: var(--clr-outline-var);
+  margin-top: 0.85rem;
+  font-family: var(--font-mono);
+}
+
 /* ── Graph pulse animation ── */
 @keyframes graph-pulse {
   0%, 100% { r: 30; opacity: 0.18; }
@@ -671,12 +678,26 @@ ul { list-style: none; }
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   border-left: 1px solid var(--clr-outline-var);
+  margin-top: 0;
 }
 
 .project-detail__line {
   font-size: 0.82rem;
   color: var(--clr-on-surface-var);
   line-height: 1.5;
+  display: block;
+}
+
+.project-detail__line dt {
+  display: inline;
+  font-weight: 600;
+  margin-right: 0.3rem;
+  font-family: var(--font-mono);
+}
+
+.project-detail__line dd {
+  display: inline;
+  margin: 0;
 }
 
 .modelo-card__tags {
@@ -1107,4 +1128,13 @@ ul { list-style: none; }
 ::selection {
   background: rgba(87, 241, 219, 0.25);
   color: var(--clr-on-surface);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -40,7 +40,7 @@
         <button type="button" class="lang-btn" data-lang="es" aria-label="Español">ES</button>
       </div>
       <a href="#contact" class="btn-primary nav-cta" id="nav-cta-btn" data-i18n="nav.cta">DISCUSS A PROBLEM</a>
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu" data-i18n-aria="nav.menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -92,18 +92,18 @@
 
         <div class="hero-stats" role="list">
           <div class="stat" role="listitem">
-            <span class="stat-value mono" data-i18n="hero.stat.modeling">MODELING</span>
-            <span class="stat-label" data-i18n="hero.stat.modeling_label">Mathematical core</span>
+            <span class="stat-value mono" data-i18n="hero.stat.modeling">Mathematical modeling</span>
+            <span class="stat-label" data-i18n="hero.stat.modeling_label">Analytical core</span>
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat" role="listitem">
-            <span class="stat-value mono" data-i18n="hero.stat.ml">ML + NLP</span>
-            <span class="stat-label" data-i18n="hero.stat.ml_label">Applied pipelines</span>
+            <span class="stat-value mono" data-i18n="hero.stat.ml">ML + NLP systems</span>
+            <span class="stat-label" data-i18n="hero.stat.ml_label">Interpretable pipelines</span>
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat" role="listitem">
-            <span class="stat-value mono" data-i18n="hero.stat.agents">AGENTS</span>
-            <span class="stat-label" data-i18n="hero.stat.agents_label">Workflow orchestration</span>
+            <span class="stat-value mono" data-i18n="hero.stat.agents">Agents</span>
+            <span class="stat-label" data-i18n="hero.stat.agents_label">Orchestrated reasoning</span>
           </div>
         </div>
       </div>
@@ -216,6 +216,7 @@
               <text x="180" y="423" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="5.5" fill="#859490" data-i18n="graph.deploy">deploy</text>
             </g>
           </svg>
+          <p class="graph-subnote" data-i18n="hero.graph.subnote">Models frame uncertainty. Systems expose decisions.</p>
         </div>
       </div>
 
@@ -263,10 +264,71 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="section modelos-section" aria-labelledby="modelos-heading">
+      <div class="section-label-row">
+        <span class="mono section-tag" data-i18n="section.projects">// 02_PROJECTS</span>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <h2 id="modelos-heading" class="section-title" data-i18n="projects.heading">Selected Projects</h2>
+      <div class="modelos-grid">
+        <div class="modelo-card">
+          <div class="modelo-card__id" data-i18n="proj.eco.id">PROJECT_01 // DEPLOYED</div>
+          <h3 class="modelo-card__name" data-i18n="proj.eco.name">ECOAGENT</h3>
+          <p class="modelo-card__desc" data-i18n="proj.eco.desc">AI-powered stochastic climate risk platform for real-time landslide risk prediction.</p>
+          <dl class="project-details">
+            <div class="project-detail__line">
+              <dt class="accent-text" data-i18n="proj.eco.prob_lbl">PROBLEM:</dt>
+              <dd data-i18n="proj.eco.prob">Static risk maps fail when conditions change rapidly.</dd>
+            </div>
+            <div class="project-detail__line">
+              <dt class="accent-text" data-i18n="proj.eco.core_lbl">CORE:</dt>
+              <dd data-i18n="proj.eco.core">CIR stochastic model for soil moisture + real-time weather reasoning.</dd>
+            </div>
+            <div class="project-detail__line">
+              <dt class="accent-text" data-i18n="proj.eco.integ_lbl">INTEGRITY:</dt>
+              <dd data-i18n="proj.eco.integ">Production architecture separating deterministic models from LLM orchestration. Tool-first anti-hallucination approach.</dd>
+            </div>
+          </dl>
+          <div class="modelo-card__tags">
+            <span class="tag" data-i18n="proj.eco.tag1">STOCHASTIC DIFFERENTIAL EQUATIONS</span>
+            <span class="tag" data-i18n="proj.eco.tag2">AGENTIC ORCHESTRATION</span>
+            <span class="tag" data-i18n="proj.eco.tag3">TELEGRAM + MULTIMODAL</span>
+          </div>
+          <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
+        </div>
+        <div class="modelo-card">
+          <div class="modelo-card__id" data-i18n="proj.stoc.id">PROJECT_02 // RESEARCH</div>
+          <h3 class="modelo-card__name" data-i18n="proj.stoc.name">STOCHASTOGREEN</h3>
+          <p class="modelo-card__desc" data-i18n="proj.stoc.desc">Climate transition risk simulator for financial portfolios.</p>
+          <dl class="project-details">
+            <div class="project-detail__line">
+              <dt class="accent-text" data-i18n="proj.stoc.prob_lbl">PROBLEM:</dt>
+              <dd data-i18n="proj.stoc.prob">Existing transition models are opaque, hard to update, and lack transparent reasoning.</dd>
+            </div>
+            <div class="project-detail__line">
+              <dt class="accent-text" data-i18n="proj.stoc.core_lbl">CORE:</dt>
+              <dd data-i18n="proj.stoc.core">Merton jump-diffusion model mapping climate beta via deterministic simulation.</dd>
+            </div>
+            <div class="project-detail__line">
+              <dt class="accent-text" data-i18n="proj.stoc.integ_lbl">INTEGRITY:</dt>
+              <dd data-i18n="proj.stoc.integ">Math engine and AI layer intentionally decoupled. The LLM interprets the trajectory; it never computes the math.</dd>
+            </div>
+          </dl>
+          <div class="modelo-card__tags">
+            <span class="tag" data-i18n="proj.stoc.tag1">QUANTITATIVE RISK</span>
+            <span class="tag" data-i18n="proj.stoc.tag2">FASTAPI ORCHESTRATION</span>
+            <span class="tag" data-i18n="proj.stoc.tag3">MULTI-AGENT INTERPRETATION</span>
+          </div>
+          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
+        </div>
+      </div>
+    </section>
+
     <!-- METHOD -->
     <section id="method" class="section methodology-section" aria-labelledby="methodology-heading">
       <div class="section-label-row">
-        <span class="mono section-tag" data-i18n="section.method">// 02_METHOD</span>
+        <span class="mono section-tag" data-i18n="section.method">// 03_METHOD</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
       <h2 id="methodology-heading" class="section-title" data-i18n="method.heading">From Analytical Core to <span class="accent">Usable System</span></h2>
@@ -302,49 +364,6 @@
             <h3 data-i18n="method.s4.h">TEST FOR USEFULNESS</h3>
             <p data-i18n="method.s4.p">We evaluate not only performance, but interpretability, robustness, and whether the system actually helps people decide or act better.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section modelos-section" aria-labelledby="modelos-heading">
-      <div class="section-label-row">
-        <span class="mono section-tag" data-i18n="section.projects">// 03_PROJECTS</span>
-        <div class="section-line" aria-hidden="true"></div>
-      </div>
-      <h2 id="modelos-heading" class="section-title" data-i18n="projects.heading">Selected Projects</h2>
-      <div class="modelos-grid">
-        <div class="modelo-card">
-          <div class="modelo-card__id" data-i18n="proj.eco.id">PROJECT_01 // DEPLOYED</div>
-          <h3 class="modelo-card__name" data-i18n="proj.eco.name">ECOAGENT</h3>
-          <p class="modelo-card__desc" data-i18n="proj.eco.desc">AI-powered stochastic climate risk platform for real-time landslide risk prediction.</p>
-          <div class="project-details">
-            <p class="project-detail__line" data-i18n="proj.eco.prob">PROBLEM: Static risk maps fail when conditions change rapidly.</p>
-            <p class="project-detail__line" data-i18n="proj.eco.core">CORE: CIR stochastic model for soil moisture + real-time weather reasoning.</p>
-            <p class="project-detail__line" data-i18n="proj.eco.integ">INTEGRITY: Production architecture separating deterministic models from LLM orchestration. Tool-first anti-hallucination approach.</p>
-          </div>
-          <div class="modelo-card__tags">
-            <span class="tag" data-i18n="proj.eco.tag1">STOCHASTIC DIFFERENTIAL EQUATIONS</span>
-            <span class="tag" data-i18n="proj.eco.tag2">AGENTIC ORCHESTRATION</span>
-            <span class="tag" data-i18n="proj.eco.tag3">TELEGRAM + MULTIMODAL</span>
-          </div>
-          <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
-        </div>
-        <div class="modelo-card">
-          <div class="modelo-card__id" data-i18n="proj.stoc.id">PROJECT_02 // RESEARCH</div>
-          <h3 class="modelo-card__name" data-i18n="proj.stoc.name">STOCHASTOGREEN</h3>
-          <p class="modelo-card__desc" data-i18n="proj.stoc.desc">Climate transition risk simulator for financial portfolios.</p>
-          <div class="project-details">
-            <p class="project-detail__line" data-i18n="proj.stoc.prob">PROBLEM: Existing transition models are opaque, hard to update, and lack transparent reasoning.</p>
-            <p class="project-detail__line" data-i18n="proj.stoc.core">CORE: Merton jump-diffusion model mapping climate beta via deterministic simulation.</p>
-            <p class="project-detail__line" data-i18n="proj.stoc.integ">INTEGRITY: Math engine and AI layer intentionally decoupled. The LLM interprets the trajectory; it never computes the math.</p>
-          </div>
-          <div class="modelo-card__tags">
-            <span class="tag" data-i18n="proj.stoc.tag1">QUANTITATIVE RISK</span>
-            <span class="tag" data-i18n="proj.stoc.tag2">FASTAPI ORCHESTRATION</span>
-            <span class="tag" data-i18n="proj.stoc.tag3">MULTI-AGENT INTERPRETATION</span>
-          </div>
-          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
         </div>
       </div>
     </section>
@@ -432,24 +451,25 @@
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form" onsubmit="event.preventDefault(); document.getElementById('contact-success').style.display='block'; this.reset();">
           <div class="form-group">
             <label for="contact-name" class="form-label mono" data-i18n="contact.form.name">NAME</label>
-            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" required autocomplete="name">
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" data-i18n-placeholder="contact.form.name.ph" required autocomplete="name">
           </div>
           <div class="form-group">
             <label for="contact-email" class="form-label mono" data-i18n="contact.form.email">EMAIL</label>
-            <input type="email" id="contact-email" name="email" class="form-input" placeholder="you@organization.com" required autocomplete="email">
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="you@organization.com" data-i18n-placeholder="contact.form.email.ph" required autocomplete="email">
           </div>
           <div class="form-group">
             <label for="contact-org" class="form-label mono" data-i18n="contact.form.org">ORGANIZATION</label>
-            <input type="text" id="contact-org" name="org" class="form-input" placeholder="Company, lab, or institution">
+            <input type="text" id="contact-org" name="org" class="form-input" placeholder="Company, lab, or institution" data-i18n-placeholder="contact.form.org.ph">
           </div>
           <div class="form-group">
             <label for="contact-msg" class="form-label mono" data-i18n="contact.form.msg">PROBLEM DESCRIPTION</label>
-            <textarea id="contact-msg" name="message" class="form-input form-textarea" placeholder="..." required rows="4"></textarea>
+            <textarea id="contact-msg" name="message" class="form-input form-textarea" placeholder="..." data-i18n-placeholder="contact.form.msg.ph" required rows="4"></textarea>
           </div>
           <button type="submit" class="btn-primary btn-full" id="contact-submit-btn" data-i18n="contact.form.btn">START THE CONVERSATION →</button>
+          <div id="contact-success" style="display:none; margin-top: 1rem; color: var(--clr-primary); font-family: var(--font-mono); font-size: 0.85rem;" data-i18n="contact.form.success">Message received. We will be in touch shortly.</div>
           <p class="form-disclaimer mono" data-i18n="contact.form.disc">Just enough context to understand the problem. No spam, no theatrics.</p>
         </form>
       </div>
@@ -543,6 +563,10 @@
     }
 
     function run() {
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        reset();
+        return; // Halt if reduced motion is requested
+      }
       reset();
       requestAnimationFrame(function() {
         requestAnimationFrame(function() {
