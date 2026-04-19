@@ -315,28 +315,36 @@
       <h2 id="modelos-heading" class="section-title" data-i18n="projects.heading">Selected Projects</h2>
       <div class="modelos-grid">
         <div class="modelo-card">
-          <div class="modelo-card__id" data-i18n="proj.proto">PROJECT_01 // PROTOTYPE</div>
-          <h3 class="modelo-card__name">STOCHASTOGREEN</h3>
-          <p class="modelo-card__desc" data-i18n="proj.stoc.desc">A climate transition risk prototype built around stochastic modeling, simulation, and AI-assisted interpretation.</p>
-          <div class="modelo-card__tags">
-            <span class="tag">STOCHASTIC MODELING</span>
-            <span class="tag">RISK ANALYSIS</span>
-            <span class="tag">SIMULATION</span>
+          <div class="modelo-card__id" data-i18n="proj.eco.id">PROJECT_01 // DEPLOYED</div>
+          <h3 class="modelo-card__name" data-i18n="proj.eco.name">ECOAGENT</h3>
+          <p class="modelo-card__desc" data-i18n="proj.eco.desc">AI-powered stochastic climate risk platform for real-time landslide risk prediction.</p>
+          <div class="project-details">
+            <p class="project-detail__line" data-i18n="proj.eco.prob">PROBLEM: Static risk maps fail when conditions change rapidly.</p>
+            <p class="project-detail__line" data-i18n="proj.eco.core">CORE: CIR stochastic model for soil moisture + real-time weather reasoning.</p>
+            <p class="project-detail__line" data-i18n="proj.eco.integ">INTEGRITY: Production architecture separating deterministic models from LLM orchestration. Tool-first anti-hallucination approach.</p>
           </div>
-          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
-          <span class="modelo-card__env">VERCEL_DEPLOY</span>
-        </div>
-        <div class="modelo-card">
-          <div class="modelo-card__id" data-i18n="proj.proto2">PROJECT_02 // PROTOTYPE</div>
-          <h3 class="modelo-card__name">ECOAGENT</h3>
-          <p class="modelo-card__desc" data-i18n="proj.eco.desc">A stochastic risk system for ecological and environmental scenarios, combining forecasting, structured reasoning, and agentic workflows.</p>
           <div class="modelo-card__tags">
-            <span class="tag">ENVIRONMENTAL RISK</span>
-            <span class="tag">AGENTIC WORKFLOWS</span>
-            <span class="tag">APPLIED ML</span>
+            <span class="tag" data-i18n="proj.eco.tag1">STOCHASTIC DIFFERENTIAL EQUATIONS</span>
+            <span class="tag" data-i18n="proj.eco.tag2">AGENTIC ORCHESTRATION</span>
+            <span class="tag" data-i18n="proj.eco.tag3">TELEGRAM + MULTIMODAL</span>
           </div>
           <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
-          <span class="modelo-card__env">VERCEL_DEPLOY</span>
+        </div>
+        <div class="modelo-card">
+          <div class="modelo-card__id" data-i18n="proj.stoc.id">PROJECT_02 // RESEARCH</div>
+          <h3 class="modelo-card__name" data-i18n="proj.stoc.name">STOCHASTOGREEN</h3>
+          <p class="modelo-card__desc" data-i18n="proj.stoc.desc">Climate transition risk simulator for financial portfolios.</p>
+          <div class="project-details">
+            <p class="project-detail__line" data-i18n="proj.stoc.prob">PROBLEM: Existing transition models are opaque, hard to update, and lack transparent reasoning.</p>
+            <p class="project-detail__line" data-i18n="proj.stoc.core">CORE: Merton jump-diffusion model mapping climate beta via deterministic simulation.</p>
+            <p class="project-detail__line" data-i18n="proj.stoc.integ">INTEGRITY: Math engine and AI layer intentionally decoupled. The LLM interprets the trajectory; it never computes the math.</p>
+          </div>
+          <div class="modelo-card__tags">
+            <span class="tag" data-i18n="proj.stoc.tag1">QUANTITATIVE RISK</span>
+            <span class="tag" data-i18n="proj.stoc.tag2">FASTAPI ORCHESTRATION</span>
+            <span class="tag" data-i18n="proj.stoc.tag3">MULTI-AGENT INTERPRETATION</span>
+          </div>
+          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
         </div>
       </div>
     </section>
@@ -378,44 +386,29 @@
       </div>
     </section>
 
-    <!-- STACK -->
-    <section class="section impact-section" aria-label="Technology stack">
+    <!-- PHILOSOPHY / EX STACK -->
+    <section class="section philosophy-section" aria-label="Operational Philosophy">
       <div class="section-label-row">
-        <span class="mono section-tag" data-i18n="section.stack">// 05_STACK</span>
+        <span class="mono section-tag" data-i18n="section.stack">// 05_PHILOSOPHY</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
-      <h2 class="section-title" data-i18n="stack.heading">Tools, Not <span class="accent">Identity</span></h2>
-      <div class="tech-marquee" aria-label="Technologies used">
-        <div class="marquee-track">
-          <span class="mono tech-tag">GEMINI PRO</span>
-          <span class="mono tech-tag">LANGCHAIN</span>
-          <span class="mono tech-tag">FIREBASE</span>
-          <span class="mono tech-tag">VERTEX AI</span>
-          <span class="mono tech-tag">PYTHON</span>
-          <span class="mono tech-tag">FASTAPI</span>
-          <span class="mono tech-tag">DOCKER</span>
-          <span class="mono tech-tag">KUBERNETES</span>
-          <span class="mono tech-tag">TENSORFLOW</span>
-          <span class="mono tech-tag">HUGGING FACE</span>
-          <span class="mono tech-tag">OLLAMA</span>
-          <span class="mono tech-tag">POSTGRES</span>
-          <span class="mono tech-tag">PGVECTOR</span>
-          <span class="mono tech-tag">GEMINI PRO</span>
-          <span class="mono tech-tag">LANGCHAIN</span>
-          <span class="mono tech-tag">FIREBASE</span>
-          <span class="mono tech-tag">VERTEX AI</span>
-          <span class="mono tech-tag">PYTHON</span>
-          <span class="mono tech-tag">FASTAPI</span>
-          <span class="mono tech-tag">DOCKER</span>
-          <span class="mono tech-tag">KUBERNETES</span>
-          <span class="mono tech-tag">TENSORFLOW</span>
-          <span class="mono tech-tag">HUGGING FACE</span>
-          <span class="mono tech-tag">OLLAMA</span>
-          <span class="mono tech-tag">POSTGRES</span>
-          <span class="mono tech-tag">PGVECTOR</span>
+      <h2 class="section-title" data-i18n="stack.heading">Operational <span class="accent">Philosophy</span></h2>
+      <p class="section-subtitle philosophy-sub" data-i18n="stack.sub">How we approach the transition from theory to deployed system.</p>
+      
+      <div class="philosophy-grid">
+        <div class="philosophy-item">
+          <h3 data-i18n="stack.p1.h">Analytical Core Before Interface</h3>
+          <p data-i18n="stack.p1.b">The math comes first. We do not use LLMs to hallucinate numbers. We use deterministic engines for truth. We use agents for reasoning and routing. Interfaces are built to expose the model's logic, not obscure it.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3 data-i18n="stack.p2.h">Tools Follow the Problem</h3>
+          <p data-i18n="stack.p2.b">We adapt the architecture to the failure modes of the decision. Models remain interpretable. Orchestration layers exist to improve usefulness and constraint handling, not to add theatrical complexity.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3 data-i18n="stack.p3.h">Deployment Matters</h3>
+          <p data-i18n="stack.p3.b">Rigorous ideas die in Jupyter notebooks. Real tools run defensively in production. We architect for testability, telemetry, and robustness from day one.</p>
         </div>
       </div>
-      <p class="section-subtitle" data-i18n="stack.sub">The stack changes with the problem. The analytical core comes first.</p>
     </section>
 
     <!-- CONTACT -->

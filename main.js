@@ -70,11 +70,27 @@ document.addEventListener('DOMContentLoaded', () => {
       "method.s4.p": "We evaluate not only performance, but interpretability, robustness, and whether the system actually helps people decide or act better.",
       "section.projects": "// 03_PROJECTS",
       "projects.heading": "Selected Projects",
-      "proj.proto": "PROJECT_01 // PROTOTYPE",
-      "proj.proto2": "PROJECT_02 // PROTOTYPE",
-      "proj.stoc.desc": "A climate transition risk prototype built around stochastic modeling, simulation, and AI-assisted interpretation.",
-      "proj.eco.desc": "A stochastic risk system for ecological and environmental scenarios, combining forecasting, structured reasoning, and agentic workflows.",
+      "proj.eco.name": "ECOAGENT",
+      "proj.eco.id": "PROJECT_01 // DEPLOYED",
+      "proj.eco.desc": "AI-powered stochastic climate risk platform for real-time landslide risk prediction.",
+      "proj.eco.prob": "PROBLEM: Static risk maps fail when conditions change rapidly.",
+      "proj.eco.core": "CORE: CIR stochastic model for soil moisture + real-time weather reasoning.",
+      "proj.eco.integ": "INTEGRITY: Production architecture separating deterministic models from LLM orchestration. Tool-first anti-hallucination approach.",
+      "proj.eco.tag1": "STOCHASTIC DIFFERENTIAL EQUATIONS",
+      "proj.eco.tag2": "AGENTIC ORCHESTRATION",
+      "proj.eco.tag3": "TELEGRAM + MULTIMODAL",
+      
+      "proj.stoc.name": "STOCHASTOGREEN",
+      "proj.stoc.id": "PROJECT_02 // RESEARCH",
+      "proj.stoc.desc": "Climate transition risk simulator for financial portfolios.",
+      "proj.stoc.prob": "PROBLEM: Existing transition models are opaque, hard to update, and lack transparent reasoning.",
+      "proj.stoc.core": "CORE: Merton jump-diffusion model mapping climate beta via deterministic simulation.",
+      "proj.stoc.integ": "INTEGRITY: Math engine and AI layer intentionally decoupled. The LLM interprets the trajectory; it never computes the math.",
+      "proj.stoc.tag1": "QUANTITATIVE RISK",
+      "proj.stoc.tag2": "FASTAPI ORCHESTRATION",
+      "proj.stoc.tag3": "MULTI-AGENT INTERPRETATION",
       "proj.launch": "LAUNCH DEMO →",
+      
       "section.founder": "// 04_FOUNDER",
       "founder.heading": "Behind the <span class=\"accent\">Project</span>",
       "founder.sub": "A founder-led lab built around modeling, machine learning, NLP, and decision systems.",
@@ -84,9 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
       "founder.callout.h": "Building better<br><span class=\"accent\">decision tools</span>",
       "founder.callout.p": "This project grows through carefully chosen prototypes, technical writing, and real systems built with rigor. The goal is not to look larger than it is, but to become more real with every iteration.",
       "founder.callout.btn": "START A CONVERSATION",
-      "section.stack": "// 05_STACK",
-      "stack.heading": "Tools, Not <span class=\"accent\">Identity</span>",
-      "stack.sub": "The stack changes with the problem. The analytical core comes first.",
+      "section.stack": "// 05_PHILOSOPHY",
+      "stack.heading": "Operational <span class=\"accent\">Philosophy</span>",
+      "stack.sub": "How we approach the transition from theory to deployed system.",
+      "stack.p1.h": "Analytical Core Before Interface",
+      "stack.p1.b": "The math comes first. We do not use LLMs to hallucinate numbers. We use deterministic engines for truth. We use agents for reasoning and routing. Interfaces are built to expose the model's logic, not obscure it.",
+      "stack.p2.h": "Tools Follow the Problem",
+      "stack.p2.b": "We adapt the architecture to the failure modes of the decision. Models remain interpretable. Orchestration layers exist to improve usefulness and constraint handling, not to add theatrical complexity.",
+      "stack.p3.h": "Deployment Matters",
+      "stack.p3.b": "Rigorous ideas die in Jupyter notebooks. Real tools run defensively in production. We architect for testability, telemetry, and robustness from day one.",
       "section.contact": "// 06_CONTACT",
       "contact.heading": "Have a decision problem worth<br><span class=\"accent\">modeling?</span>",
       "contact.p": "If you are working on a complex workflow, a scientific tool, or an applied AI system that needs more than a chatbot layer, I'd be glad to hear about it.",
@@ -176,11 +198,27 @@ document.addEventListener('DOMContentLoaded', () => {
       "method.s4.p": "Evaluamos no solo el rendimiento, sino la interpretabilidad, la robustez y si el sistema realmente ayuda a las personas a decidir o actuar mejor.",
       "section.projects": "// 03_PROYECTOS",
       "projects.heading": "Proyectos Seleccionados",
-      "proj.proto": "PROYECTO_01 // PROTOTIPO",
-      "proj.proto2": "PROYECTO_02 // PROTOTIPO",
-      "proj.stoc.desc": "Un prototipo de riesgo de transición climática construido alrededor del modelado estocástico, la simulación y la interpretación asistida por IA.",
-      "proj.eco.desc": "Un sistema de riesgo estocástico para escenarios ecológicos y ambientales, combinando pronósticos, razonamiento estructurado y flujos de trabajo con agentes.",
+      "proj.eco.name": "ECOAGENT",
+      "proj.eco.id": "PROYECTO_01 // DESPLEGADO",
+      "proj.eco.desc": "Plataforma estocástica de riesgo climático asistida por IA para la predicción de riesgo de deslizamientos en tiempo real.",
+      "proj.eco.prob": "PROBLEMA: Los mapas de riesgo estáticos fallan cuando las condiciones cambian rápidamente.",
+      "proj.eco.core": "NÚCLEO: Modelo estocástico CIR para la humedad del suelo + razonamiento meteorológico en tiempo real.",
+      "proj.eco.integ": "INTEGRIDAD: Arquitectura de producción separando modelos deterministas de la orquestación de LLMs. Enfoque anti-alucinación centrado en herramientas.",
+      "proj.eco.tag1": "ECUACIONES DIFERENCIALES ESTOCÁSTICAS",
+      "proj.eco.tag2": "ORQUESTACIÓN DE AGENTES",
+      "proj.eco.tag3": "TELEGRAM + MULTIMODAL",
+      
+      "proj.stoc.name": "STOCHASTOGREEN",
+      "proj.stoc.id": "PROYECTO_02 // INVESTIGACIÓN",
+      "proj.stoc.desc": "Simulador de riesgo de transición climática para carteras financieras.",
+      "proj.stoc.prob": "PROBLEMA: Los modelos de transición existentes son opacos, difíciles de actualizar y carecen de razonamiento transparente.",
+      "proj.stoc.core": "NÚCLEO: Modelo de salto y difusión de Merton mapeando beta climático a través de simulación determinista.",
+      "proj.stoc.integ": "INTEGRIDAD: Motor matemático y capa de IA intencionalmente desacoplados. El LLM interpreta la trayectoria; nunca calcula las matemáticas.",
+      "proj.stoc.tag1": "RIESGO CUANTITATIVO",
+      "proj.stoc.tag2": "FASTAPI",
+      "proj.stoc.tag3": "INTERPRETACIÓN MULTIAGENTE",
       "proj.launch": "INICIAR DEMO →",
+      
       "section.founder": "// 04_FUNDADOR",
       "founder.heading": "Detrás del <span class=\"accent\">Proyecto</span>",
       "founder.sub": "Un laboratorio centrado en modelado, ML, NLP y sistemas de decisión impulsado por su fundador.",
@@ -190,9 +228,15 @@ document.addEventListener('DOMContentLoaded', () => {
       "founder.callout.h": "Construyendo mejores<br><span class=\"accent\">herramientas de decisión</span>",
       "founder.callout.p": "Este proyecto crece a través de prototipos cuidadosamente elegidos, escritura técnica y sistemas reales construidos con rigor. El objetivo no es parecer más grande de lo que es, sino volverse más real con cada iteración.",
       "founder.callout.btn": "INICIAR UNA CONVERSACIÓN",
-      "section.stack": "// 05_STACK",
-      "stack.heading": "Herramientas, No <span class=\"accent\">Identidad</span>",
-      "stack.sub": "Las herramientas cambian con el problema. El núcleo analítico viene primero.",
+      "section.stack": "// 05_FILOSOFÍA",
+      "stack.heading": "Filosofía <span class=\"accent\">Operativa</span>",
+      "stack.sub": "Cómo abordamos la transición de la teoría al sistema desplegado.",
+      "stack.p1.h": "Núcleo Analítico Antes de la Interfaz",
+      "stack.p1.b": "Las matemáticas van primero. No usamos LLMs para alucinar números. Usamos motores deterministas para la verdad y agentes para el razonamiento y ruteo. Las interfaces se construyen para exponer la lógica del modelo, no para oscurecerla.",
+      "stack.p2.h": "Las Herramientas Siguen al Problema",
+      "stack.p2.b": "Adaptamos la arquitectura a los modos de fallo de la decisión. Los modelos permanecen interpretables. Las capas de orquestación existen para mejorar la utilidad y el manejo de restricciones, no para agregar complejidad teatral.",
+      "stack.p3.h": "El Despliegue Importa",
+      "stack.p3.b": "Las ideas rigurosas mueren en notebooks de Jupyter. Las herramientas reales se ejecutan defensivamente en producción. Arquitectamos para testabilidad, telemetría y robustez desde el primer día.",
       "section.contact": "// 06_CONTACTO",
       "contact.heading": "¿Tienes un problema de decisión que valga la pena<br><span class=\"accent\">modelar?</span>",
       "contact.p": "Si estás trabajando en un flujo de trabajo complejo, una herramienta científica o un sistema de IA aplicada que necesita más que una simple capa de chatbot, me gustaría escucharlo.",
@@ -221,11 +265,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const getLang = () => document.documentElement.lang || 'en';
+  const getLang = () => localStorage.getItem('velveteen_lang') || document.documentElement.lang || 'en';
   
   function updateLanguage(newLang) {
     if (newLang !== 'en' && newLang !== 'es') return;
     document.documentElement.lang = newLang;
+    localStorage.setItem('velveteen_lang', newLang);
     
     document.querySelectorAll('.lang-btn').forEach(btn => {
       if (btn.dataset.lang === newLang) {
@@ -240,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dict = i18n[newLang];
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (dict[key]) {
+      if (key && dict[key]) {
         el.innerHTML = dict[key];
       }
     });
@@ -252,6 +297,8 @@ document.addEventListener('DOMContentLoaded', () => {
       updateLanguage(selected);
     });
   });
+
+  updateLanguage(getLang());
 
   // ── Grid Canvas background ──────────────────────────
   const canvas = document.getElementById('grid-canvas');

@@ -455,6 +455,11 @@ ul { list-style: none; }
 .hero-graph {
   width: 100%;
   max-width: 420px;
+  background: rgba(28, 27, 29, 0.4);
+  border: 1px solid var(--clr-outline-var);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
 }
 
 /* ── Graph pulse animation ── */
@@ -659,6 +664,21 @@ ul { list-style: none; }
   margin: 0 0 1.25rem;
 }
 
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--clr-outline-var);
+}
+
+.project-detail__line {
+  font-size: 0.82rem;
+  color: var(--clr-on-surface-var);
+  line-height: 1.5;
+}
+
 .modelo-card__tags {
   display: flex;
   flex-wrap: wrap;
@@ -790,39 +810,39 @@ ul { list-style: none; }
   line-height: 1.65;
 }
 
-/* ── Impact / Tech marquee ── */
-.impact-section { max-width: 100%; padding: 4rem 0; }
-.impact-section .section-label-row,
-.impact-section .section-title { padding: 0 2rem; max-width: 1280px; margin-left: auto; margin-right: auto; }
-.impact-section .section-subtitle {
-  padding: 0 2rem;
-  max-width: 640px;
-  margin: 2rem auto 0;
+/* ── Philosophy Section ── */
+.philosophy-section {
+  max-width: 1280px;
+  text-align: left;
 }
-.tech-marquee {
-  overflow: hidden;
-  margin-top: 3rem;
-  border-top: 1px solid var(--clr-outline-var);
-  border-bottom: 1px solid var(--clr-outline-var);
-  padding: 1rem 0;
+
+.philosophy-sub {
+  margin-bottom: 3.5rem;
 }
-.marquee-track {
-  display: flex;
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
-  width: max-content;
-  animation: marquee 30s linear infinite;
+  margin-top: 2rem;
 }
-@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.tech-tag {
-  color: var(--clr-outline-var);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  white-space: nowrap;
-  padding: 0.25rem 1rem;
-  border-left: 1px solid var(--clr-outline-var);
-  transition: color 0.2s, opacity 0.2s;
+
+.philosophy-item h3 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--clr-on-surface);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--clr-outline-var);
 }
-.tech-tag:hover { color: var(--clr-outline); }
+
+.philosophy-item p {
+  font-size: 0.9rem;
+  color: var(--clr-on-surface-var);
+  line-height: 1.7;
+}
 
 /* ── Contact ── */
 .contact-section { max-width: 1280px; }
