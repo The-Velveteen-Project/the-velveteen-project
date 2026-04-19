@@ -334,13 +334,13 @@ ul { list-style: none; }
 /* ── Hero ── */
 .hero {
   min-height: 100vh;
-  padding-top: 5.5rem;
+  padding-top: clamp(8rem, 15vh, 12rem);
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 48% 45%;
   justify-content: space-between;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1280px;
   margin: 0 auto;
   padding-left: 2rem;
@@ -460,7 +460,7 @@ ul { list-style: none; }
   background: rgba(28, 27, 29, 0.4);
   border: 1px solid var(--clr-outline-var);
   border-radius: 6px;
-  padding: 2.5rem 2rem;
+  padding: 2rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.2);
 }
 
