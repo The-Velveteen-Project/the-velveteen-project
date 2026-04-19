@@ -23,18 +23,23 @@
   <!-- Navigation -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="#inicio" class="nav-logo" aria-label="The Velveteen Project Home">
+      <a href="#home" class="nav-logo" aria-label="The Velveteen Project Home">
         <img src="rabbit.svg" alt="Velveteen rabbit mark" class="logo-svg" width="32" height="32">
         <span class="logo-text">VELVETEEN</span>
       </a>
       <div class="nav-links" role="menubar">
-        <a href="#manifiesto" class="nav-link" role="menuitem">MANIFESTO</a>
-        <a href="#metodologia" class="nav-link" role="menuitem">METHOD</a>
-        <a href="#modelos" class="nav-link" role="menuitem">PROJECTS</a>
-        <a href="#capacidades" class="nav-link" role="menuitem">CAPABILITIES</a>
-        <a href="#equipo" class="nav-link" role="menuitem">FOUNDER</a>
+        <a href="#manifesto" class="nav-link" role="menuitem" data-i18n="nav.manifesto">MANIFESTO</a>
+        <a href="#method" class="nav-link" role="menuitem" data-i18n="nav.method">METHOD</a>
+        <a href="#projects" class="nav-link" role="menuitem" data-i18n="nav.projects">PROJECTS</a>
+        <a href="#capabilities" class="nav-link" role="menuitem" data-i18n="nav.capabilities">CAPABILITIES</a>
+        <a href="#founder" class="nav-link" role="menuitem" data-i18n="nav.founder">FOUNDER</a>
       </div>
-      <a href="#contacto" class="btn-primary nav-cta" id="nav-cta-btn">DISCUSS A PROBLEM</a>
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+      </div>
+      <a href="#contact" class="btn-primary nav-cta" id="nav-cta-btn" data-i18n="nav.cta">DISCUSS A PROBLEM</a>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -43,22 +48,27 @@
 
   <!-- Mobile drawer -->
   <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-hidden="true">
-    <a href="#manifiesto" class="mobile-link">MANIFESTO</a>
-    <a href="#metodologia" class="mobile-link">METHOD</a>
-    <a href="#modelos" class="mobile-link">PROJECTS</a>
-    <a href="#capacidades" class="mobile-link">CAPABILITIES</a>
-    <a href="#equipo" class="mobile-link">FOUNDER</a>
-    <a href="#contacto" class="btn-primary" style="display:inline-block;text-align:center;margin-top:1rem;">DISCUSS A PROBLEM</a>
+    <a href="#manifesto" class="mobile-link" data-i18n="nav.manifesto">MANIFESTO</a>
+    <a href="#method" class="mobile-link" data-i18n="nav.method">METHOD</a>
+    <a href="#projects" class="mobile-link" data-i18n="nav.projects">PROJECTS</a>
+    <a href="#capabilities" class="mobile-link" data-i18n="nav.capabilities">CAPABILITIES</a>
+    <a href="#founder" class="mobile-link" data-i18n="nav.founder">FOUNDER</a>
+    <div class="lang-switch mobile-lang">
+      <button type="button" class="lang-btn active" data-lang="en">EN</button>
+      <span class="lang-divider">/</span>
+      <button type="button" class="lang-btn" data-lang="es">ES</button>
+    </div>
+    <a href="#contact" class="btn-primary" style="display:inline-block;text-align:center;margin-top:1rem;" data-i18n="nav.cta">DISCUSS A PROBLEM</a>
   </div>
 
-  <main id="inicio">
+  <main id="home">
 
     <!-- ── HERO ── -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-content">
         <div class="hero-eyebrow">
           <span class="status-dot" aria-hidden="true"></span>
-          <span class="mono">SYSTEM STATUS // FOUNDER-LED LAB</span>
+          <span class="mono" data-i18n="hero.eyebrow">SYSTEM STATUS // FOUNDER-LED LAB</span>
         </div>
 
         <div class="hero-wordmark-typo" aria-label="The Velveteen Project">
@@ -69,38 +79,38 @@
           </div>
         </div>
 
-        <p class="hero-sub">APPLIED <span class="accent">DECISION</span> SYSTEMS LAB</p>
+        <p class="hero-sub" data-i18n="hero.sub">APPLIED <span class="accent">DECISION</span> SYSTEMS LAB</p>
 
-        <p class="hero-description">
+        <p class="hero-description" data-i18n="hero.desc">
           We build tools that combine mathematical modeling, machine learning, NLP, and agentic workflows to make complex decisions more understandable and more actionable.
         </p>
 
         <div class="hero-ctas">
-          <a href="#manifiesto" class="btn-ghost" id="hero-manifesto-btn">READ MANIFESTO</a>
-          <a href="#modelos" class="btn-ghost btn-ghost--muted" id="hero-solutions-btn">VIEW PROJECTS →</a>
+          <a href="#manifesto" class="btn-ghost" id="hero-manifesto-btn" data-i18n="hero.read_manifesto">READ MANIFESTO</a>
+          <a href="#projects" class="btn-ghost btn-ghost--muted" id="hero-solutions-btn" data-i18n="hero.view_projects">VIEW PROJECTS →</a>
         </div>
 
         <div class="hero-stats" role="list">
           <div class="stat" role="listitem">
-            <span class="stat-value mono">MODELING</span>
-            <span class="stat-label">Mathematical core</span>
+            <span class="stat-value mono" data-i18n="hero.stat.modeling">MODELING</span>
+            <span class="stat-label" data-i18n="hero.stat.modeling_label">Mathematical core</span>
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat" role="listitem">
-            <span class="stat-value mono">ML + NLP</span>
-            <span class="stat-label">Applied pipelines</span>
+            <span class="stat-value mono" data-i18n="hero.stat.ml">ML + NLP</span>
+            <span class="stat-label" data-i18n="hero.stat.ml_label">Applied pipelines</span>
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat" role="listitem">
-            <span class="stat-value mono">AGENTS</span>
-            <span class="stat-label">Workflow orchestration</span>
+            <span class="stat-value mono" data-i18n="hero.stat.agents">AGENTS</span>
+            <span class="stat-label" data-i18n="hero.stat.agents_label">Workflow orchestration</span>
           </div>
         </div>
       </div>
 
-      <!-- ── HERO VISUAL — DECISION GRAPH ── -->
+      <!-- HERO VISUAL — DECISION GRAPH -->
       <div class="hero-visual" aria-hidden="true">
-        <p class="graph-label mono">// DECISION GRAPH · RESOLVING</p>
+        <p class="graph-label mono" data-i18n="graph.label">// DECISION GRAPH · RESOLVING</p>
         <div class="hero-graph">
           <svg id="decision-graph" viewBox="0 0 360 432" xmlns="http://www.w3.org/2000/svg" width="100%">
             <defs>
@@ -109,7 +119,7 @@
               </marker>
             </defs>
 
-            <!-- ── RABBIT WATERMARK ── -->
+            <!-- RABBIT WATERMARK -->
             <g class="rabbit-watermark" transform="translate(30,72) scale(1.25)" fill="none" stroke="#57f1db" stroke-width="0.7">
               <polygon points="80,20 110,4 115,55" fill="rgba(87,241,219,0.04)"/>
               <polygon points="120,20 144,4 148,55" fill="rgba(87,241,219,0.04)"/>
@@ -135,7 +145,7 @@
               <circle cx="172" cy="148" r="8" fill="rgba(87,241,219,0.05)"/>
             </g>
 
-            <!-- ── EDGES ── -->
+            <!-- EDGES -->
             <line id="ge-1" x1="163" y1="69" x2="87" y2="130" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
             <line id="ge-2" x1="180" y1="76" x2="180" y2="122" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
             <line id="ge-3" x1="197" y1="69" x2="273" y2="130" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
@@ -147,63 +157,63 @@
             <line id="ge-9" x1="235" y1="274" x2="194" y2="328" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
             <line id="ge-10" x1="180" y1="370" x2="180" y2="400" stroke="rgba(87,241,219,0.45)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
 
-            <!-- ── NODES ── -->
+            <!-- NODES -->
 
             <!-- PROBLEM -->
             <g id="gn-prob" style="opacity:0">
               <circle cx="180" cy="54" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.55)" stroke-width="1"/>
-              <text x="180" y="51" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#e5e1e4" letter-spacing="0.06em">PROBLEM</text>
-              <text x="180" y="62" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">frame</text>
+              <text x="180" y="51" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#e5e1e4" letter-spacing="0.06em" data-i18n="graph.problem">PROBLEM</text>
+              <text x="180" y="62" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490" data-i18n="graph.frame">frame</text>
             </g>
 
             <!-- DATA -->
             <g id="gn-data" style="opacity:0">
               <circle cx="70" cy="148" r="20" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
-              <text x="70" y="145" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7.5" font-weight="500" fill="#bacac5" letter-spacing="0.06em">DATA</text>
-              <text x="70" y="157" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">sources</text>
+              <text x="70" y="145" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7.5" font-weight="500" fill="#bacac5" letter-spacing="0.06em" data-i18n="graph.data">DATA</text>
+              <text x="70" y="157" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490" data-i18n="graph.sources">sources</text>
             </g>
 
             <!-- UNCERTAIN -->
             <g id="gn-unc" style="opacity:0">
               <circle cx="180" cy="142" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
-              <text x="180" y="139" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" font-weight="500" fill="#bacac5" letter-spacing="0.05em">UNCERTAINTY</text>
-              <text x="180" y="151" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">mapping</text>
+              <text x="180" y="139" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" font-weight="500" fill="#bacac5" letter-spacing="0.05em" data-i18n="graph.unc">UNCERTAINTY</text>
+              <text x="180" y="151" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490" data-i18n="graph.mapping">mapping</text>
             </g>
 
             <!-- BOUNDS / CONSTRAINTS -->
             <g id="gn-con" style="opacity:0">
               <circle cx="290" cy="148" r="20" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
-              <text x="290" y="145" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6.5" font-weight="500" fill="#bacac5" letter-spacing="0.04em">CONSTRAINTS</text>
-              <text x="290" y="157" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">bounds</text>
+              <text x="290" y="145" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6.5" font-weight="500" fill="#bacac5" letter-spacing="0.04em" data-i18n="graph.con">CONSTRAINTS</text>
+              <text x="290" y="157" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490" data-i18n="graph.bounds">bounds</text>
             </g>
 
             <!-- MODEL CORE -->
             <g id="gn-model" style="opacity:0">
               <circle cx="118" cy="256" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
-              <text x="118" y="251" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.05em">MODEL</text>
-              <text x="118" y="262" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.05em">CORE</text>
+              <text x="118" y="251" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.05em" data-i18n="graph.model">MODEL</text>
+              <text x="118" y="262" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.05em" data-i18n="graph.core">CORE</text>
             </g>
 
             <!-- PIPELINE -->
             <g id="gn-pipe" style="opacity:0">
               <circle cx="248" cy="256" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
-              <text x="248" y="251" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6.5" font-weight="500" fill="#bacac5" letter-spacing="0.04em">ML + NLP</text>
-              <text x="248" y="263" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">pipeline</text>
+              <text x="248" y="251" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6.5" font-weight="500" fill="#bacac5" letter-spacing="0.04em" data-i18n="graph.stat.ml">ML + NLP</text>
+              <text x="248" y="263" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490" data-i18n="graph.pipe">pipeline</text>
             </g>
 
             <!-- DECISION — active, pulsing -->
             <g id="gn-dec" style="opacity:0">
               <circle class="graph-pulse-ring" cx="180" cy="348" r="28" fill="none" stroke="#57f1db" stroke-width="0.5"/>
               <circle cx="180" cy="348" r="22" fill="rgba(87,241,219,0.07)" stroke="#57f1db" stroke-width="1.5"/>
-              <text x="180" y="345" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7.5" font-weight="500" fill="#57f1db" letter-spacing="0.08em">DECISION</text>
-              <text x="180" y="357" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#57f1db" opacity="0.6">output</text>
+              <text x="180" y="345" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7.5" font-weight="500" fill="#57f1db" letter-spacing="0.08em" data-i18n="graph.decision">DECISION</text>
+              <text x="180" y="357" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#57f1db" opacity="0.6" data-i18n="graph.output">output</text>
             </g>
 
             <!-- ACTION -->
             <g id="gn-act" style="opacity:0">
               <circle cx="180" cy="416" r="16" fill="#1c1b1d" stroke="rgba(87,241,219,0.22)" stroke-width="0.8"/>
-              <text x="180" y="413" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.08em">ACTION</text>
-              <text x="180" y="423" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="5.5" fill="#859490">deploy</text>
+              <text x="180" y="413" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.08em" data-i18n="graph.action">ACTION</text>
+              <text x="180" y="423" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="5.5" fill="#859490" data-i18n="graph.deploy">deploy</text>
             </g>
           </svg>
         </div>
@@ -211,134 +221,134 @@
 
     </section>
 
-    <!-- ── MANIFESTO ── -->
-    <section id="manifiesto" class="section manifesto-section" aria-labelledby="manifesto-heading">
+    <!-- MANIFESTO -->
+    <section id="manifesto" class="section manifesto-section" aria-labelledby="manifesto-heading">
       <div class="section-label-row">
-        <span class="mono section-tag">// 01_MANIFESTO</span>
+        <span class="mono section-tag" data-i18n="section.manifesto">// 01_MANIFESTO</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
       <div class="manifesto-grid">
         <div class="manifesto-text">
-          <h2 id="manifesto-heading">Mathematics is a precise language,<br><span class="accent">but it only becomes real<br>when it enters use.</span></h2>
-          <p>Like in <em>The Velveteen Rabbit</em>, something becomes real when it enters a relationship with the world. In technology, a model becomes real when it informs a workflow, supports a decision, or helps someone act with better judgment.</p>
-          <p>The Velveteen Project is a founder-led applied decision systems lab. It exists to turn rigorous ideas into usable tools.</p>
-          <p>We work at the intersection of mathematical modeling, machine learning, natural language processing, and agentic systems to build tools for problems shaped by uncertainty, fragmented information, and operational friction.</p>
-          <p><strong class="accent-text">We are not interested in AI as spectacle.</strong> We are interested in AI as infrastructure: explainable, deployable, and useful.</p>
-          <p>This project is about moving from theory to operation without losing rigor in the process.</p>
+          <h2 id="manifesto-heading" data-i18n="manifesto.heading">Mathematics is a precise language,<br><span class="accent">but it only becomes real<br>when it enters use.</span></h2>
+          <p data-i18n="manifesto.p1">Like in <em>The Velveteen Rabbit</em>, something becomes real when it enters a relationship with the world. In technology, a model becomes real when it informs a workflow, supports a decision, or helps someone act with better judgment.</p>
+          <p data-i18n="manifesto.p2">The Velveteen Project is a founder-led applied decision systems lab. It exists to turn rigorous ideas into usable tools.</p>
+          <p data-i18n="manifesto.p3">We work at the intersection of mathematical modeling, machine learning, natural language processing, and agentic systems to build tools for problems shaped by uncertainty, fragmented information, and operational friction.</p>
+          <p data-i18n="manifesto.p4"><strong class="accent-text">We are not interested in AI as spectacle.</strong> We are interested in AI as infrastructure: explainable, deployable, and useful.</p>
+          <p data-i18n="manifesto.p5">This project is about moving from theory to operation without losing rigor in the process.</p>
           <div class="manifesto-pillars">
             <div class="pillar">
-              <span class="pillar-icon">⬡</span>
-              <span>Rigor before hype</span>
+              <span class="pillar-icon" aria-hidden="true">⬡</span>
+              <span data-i18n="manifesto.pillar1">Rigor before hype</span>
             </div>
             <div class="pillar">
-              <span class="pillar-icon">⬡</span>
-              <span>Complexity made usable</span>
+              <span class="pillar-icon" aria-hidden="true">⬡</span>
+              <span data-i18n="manifesto.pillar2">Complexity made usable</span>
             </div>
             <div class="pillar">
-              <span class="pillar-icon">⬡</span>
-              <span>Research into systems</span>
+              <span class="pillar-icon" aria-hidden="true">⬡</span>
+              <span data-i18n="manifesto.pillar3">Research into systems</span>
             </div>
           </div>
         </div>
         <div class="manifesto-aside" aria-hidden="true">
           <div class="manifesto-data-block">
-            <span class="mono data-label">MISSION</span>
-            <span class="mono data-val">Turn rigorous ideas into usable tools.</span>
-            <span class="mono data-label">VISION</span>
-            <span class="mono data-val">Build decision systems worth trusting.</span>
-            <span class="mono data-label">PHILOSOPHY</span>
-            <span class="mono data-val">Research-driven · Founder-led · Deployable</span>
+            <span class="mono data-label" data-i18n="manifesto.data.mission_lbl">MISSION</span>
+            <span class="mono data-val" data-i18n="manifesto.data.mission_val">Turn rigorous ideas into usable tools.</span>
+            <span class="mono data-label" data-i18n="manifesto.data.vision_lbl">VISION</span>
+            <span class="mono data-val" data-i18n="manifesto.data.vision_val">Build decision systems worth trusting.</span>
+            <span class="mono data-label" data-i18n="manifesto.data.phil_lbl">PHILOSOPHY</span>
+            <span class="mono data-val" data-i18n="manifesto.data.phil_val">Research-driven · Founder-led · Deployable</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── METHOD ── -->
-    <section id="metodologia" class="section methodology-section" aria-labelledby="methodology-heading">
+    <!-- METHOD -->
+    <section id="method" class="section methodology-section" aria-labelledby="methodology-heading">
       <div class="section-label-row">
-        <span class="mono section-tag">// 02_METHOD</span>
+        <span class="mono section-tag" data-i18n="section.method">// 02_METHOD</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
-      <h2 id="methodology-heading" class="section-title">From Analytical Core to <span class="accent">Usable System</span></h2>
-      <p class="section-subtitle">A practical process for turning complex ideas into tools that can actually support real decisions.</p>
+      <h2 id="methodology-heading" class="section-title" data-i18n="method.heading">From Analytical Core to <span class="accent">Usable System</span></h2>
+      <p class="section-subtitle" data-i18n="method.sub">A practical process for turning complex ideas into tools that can actually support real decisions.</p>
       <div class="methodology-steps">
         <div class="method-step reveal-item" data-step="01">
           <div class="step-number mono">01</div>
           <div class="step-content">
-            <h3>FRAME THE DECISION</h3>
-            <p>We identify the decision that matters, the constraints around it, the available data, and the failure modes. The goal is not to automate everything, but to clarify what must be modeled and what must remain visible.</p>
+            <h3 data-i18n="method.s1.h">FRAME THE DECISION</h3>
+            <p data-i18n="method.s1.p">We identify the decision that matters, the constraints around it, the available data, and the failure modes. The goal is not to automate everything, but to clarify what must be modeled and what must remain visible.</p>
           </div>
           <div class="step-connector" aria-hidden="true"></div>
         </div>
         <div class="method-step reveal-item" data-step="02">
           <div class="step-number mono">02</div>
           <div class="step-content">
-            <h3>BUILD THE ANALYTICAL CORE</h3>
-            <p>We design the core of the system around the problem itself: a mathematical model, an ML pipeline, or a hybrid architecture when the problem calls for it.</p>
+            <h3 data-i18n="method.s2.h">BUILD THE ANALYTICAL CORE</h3>
+            <p data-i18n="method.s2.p">We design the core of the system around the problem itself: a mathematical model, an ML pipeline, or a hybrid architecture when the problem calls for it.</p>
           </div>
           <div class="step-connector" aria-hidden="true"></div>
         </div>
         <div class="method-step reveal-item" data-step="03">
           <div class="step-number mono">03</div>
           <div class="step-content">
-            <h3>WRAP IT IN WORKFLOW</h3>
-            <p>We add interfaces, retrieval, orchestration, or agentic components only where they improve usability, reasoning, or execution.</p>
+            <h3 data-i18n="method.s3.h">WRAP IT IN WORKFLOW</h3>
+            <p data-i18n="method.s3.p">We add interfaces, retrieval, orchestration, or agentic components only where they improve usability, reasoning, or execution.</p>
           </div>
           <div class="step-connector" aria-hidden="true"></div>
         </div>
         <div class="method-step reveal-item" data-step="04">
           <div class="step-number mono">04</div>
           <div class="step-content">
-            <h3>TEST FOR USEFULNESS</h3>
-            <p>We evaluate not only performance, but interpretability, robustness, and whether the system actually helps people decide or act better.</p>
+            <h3 data-i18n="method.s4.h">TEST FOR USEFULNESS</h3>
+            <p data-i18n="method.s4.p">We evaluate not only performance, but interpretability, robustness, and whether the system actually helps people decide or act better.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── PROJECTS ── -->
-    <section id="modelos" class="section modelos-section" aria-labelledby="modelos-heading">
+    <!-- PROJECTS -->
+    <section id="projects" class="section modelos-section" aria-labelledby="modelos-heading">
       <div class="section-label-row">
-        <span class="mono section-tag">// 03_PROJECTS</span>
+        <span class="mono section-tag" data-i18n="section.projects">// 03_PROJECTS</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
-      <h2 id="modelos-heading" class="section-title">Selected Projects</h2>
+      <h2 id="modelos-heading" class="section-title" data-i18n="projects.heading">Selected Projects</h2>
       <div class="modelos-grid">
         <div class="modelo-card">
-          <div class="modelo-card__id">PROJECT_01 // PROTOTYPE</div>
+          <div class="modelo-card__id" data-i18n="proj.proto">PROJECT_01 // PROTOTYPE</div>
           <h3 class="modelo-card__name">STOCHASTOGREEN</h3>
-          <p class="modelo-card__desc">A climate transition risk prototype built around stochastic modeling, simulation, and AI-assisted interpretation.</p>
+          <p class="modelo-card__desc" data-i18n="proj.stoc.desc">A climate transition risk prototype built around stochastic modeling, simulation, and AI-assisted interpretation.</p>
           <div class="modelo-card__tags">
             <span class="tag">STOCHASTIC MODELING</span>
             <span class="tag">RISK ANALYSIS</span>
             <span class="tag">SIMULATION</span>
           </div>
-          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener">LAUNCH DEMO →</a>
+          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
           <span class="modelo-card__env">VERCEL_DEPLOY</span>
         </div>
         <div class="modelo-card">
-          <div class="modelo-card__id">PROJECT_02 // PROTOTYPE</div>
+          <div class="modelo-card__id" data-i18n="proj.proto2">PROJECT_02 // PROTOTYPE</div>
           <h3 class="modelo-card__name">ECOAGENT</h3>
-          <p class="modelo-card__desc">A stochastic risk system for ecological and environmental scenarios, combining forecasting, structured reasoning, and agentic workflows.</p>
+          <p class="modelo-card__desc" data-i18n="proj.eco.desc">A stochastic risk system for ecological and environmental scenarios, combining forecasting, structured reasoning, and agentic workflows.</p>
           <div class="modelo-card__tags">
             <span class="tag">ENVIRONMENTAL RISK</span>
             <span class="tag">AGENTIC WORKFLOWS</span>
             <span class="tag">APPLIED ML</span>
           </div>
-          <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener">LAUNCH DEMO →</a>
+          <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener" data-i18n="proj.launch">LAUNCH DEMO →</a>
           <span class="modelo-card__env">VERCEL_DEPLOY</span>
         </div>
       </div>
     </section>
 
-    <!-- ── FOUNDER ── -->
-    <section id="equipo" class="section team-section" aria-labelledby="team-heading">
+    <!-- FOUNDER -->
+    <section id="founder" class="section team-section" aria-labelledby="team-heading">
       <div class="section-label-row">
-        <span class="mono section-tag">// 04_FOUNDER</span>
+        <span class="mono section-tag" data-i18n="section.founder">// 04_FOUNDER</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
-      <h2 id="team-heading" class="section-title">Behind the <span class="accent">Project</span></h2>
-      <p class="section-subtitle">A founder-led lab built around modeling, machine learning, NLP, and decision systems.</p>
+      <h2 id="team-heading" class="section-title" data-i18n="founder.heading">Behind the <span class="accent">Project</span></h2>
+      <p class="section-subtitle" data-i18n="founder.sub">A founder-led lab built around modeling, machine learning, NLP, and decision systems.</p>
 
       <div class="team-grid">
         <div class="team-card featured-team" id="ceo-card">
@@ -348,9 +358,9 @@
             </div>
           </div>
           <div class="team-info">
-            <div class="team-role mono">FOUNDER</div>
+            <div class="team-role mono" data-i18n="founder.role">FOUNDER</div>
             <h3 class="team-name">Carlos Manuel Orrego</h3>
-            <p class="team-bio">Applied mathematician, computer scientist, educator, and AI builder. I created The Velveteen Project as a public lab for building systems that connect rigorous thinking with real-world use.</p>
+            <p class="team-bio" data-i18n="founder.bio">Applied mathematician, computer scientist, educator, and AI builder. I created The Velveteen Project as a public lab for building systems that connect rigorous thinking with real-world use.</p>
             <div class="team-tags">
               <span class="tag">Mathematical Modeling</span>
               <span class="tag">ML & NLP</span>
@@ -360,21 +370,21 @@
         </div>
 
         <div class="team-callout">
-          <p class="mono callout-label">CURRENT FOCUS</p>
-          <h3>Building better<br><span class="accent">decision tools</span></h3>
-          <p>This project grows through carefully chosen prototypes, technical writing, and real systems built with rigor. The goal is not to look larger than it is, but to become more real with every iteration.</p>
-          <a href="#contacto" class="btn-primary" id="join-team-btn">START A CONVERSATION</a>
+          <p class="mono callout-label" data-i18n="founder.callout.lbl">CURRENT FOCUS</p>
+          <h3 data-i18n="founder.callout.h">Building better<br><span class="accent">decision tools</span></h3>
+          <p data-i18n="founder.callout.p">This project grows through carefully chosen prototypes, technical writing, and real systems built with rigor. The goal is not to look larger than it is, but to become more real with every iteration.</p>
+          <a href="#contact" class="btn-primary" id="join-team-btn" data-i18n="founder.callout.btn">START A CONVERSATION</a>
         </div>
       </div>
     </section>
 
-    <!-- ── STACK ── -->
+    <!-- STACK -->
     <section class="section impact-section" aria-label="Technology stack">
       <div class="section-label-row">
-        <span class="mono section-tag">// 05_STACK</span>
+        <span class="mono section-tag" data-i18n="section.stack">// 05_STACK</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
-      <h2 class="section-title">Tools, Not <span class="accent">Identity</span></h2>
+      <h2 class="section-title" data-i18n="stack.heading">Tools, Not <span class="accent">Identity</span></h2>
       <div class="tech-marquee" aria-label="Technologies used">
         <div class="marquee-track">
           <span class="mono tech-tag">GEMINI PRO</span>
@@ -405,92 +415,92 @@
           <span class="mono tech-tag">PGVECTOR</span>
         </div>
       </div>
-      <p class="section-subtitle">The stack changes with the problem. The analytical core comes first.</p>
+      <p class="section-subtitle" data-i18n="stack.sub">The stack changes with the problem. The analytical core comes first.</p>
     </section>
 
-    <!-- ── CONTACT ── -->
-    <section id="contacto" class="section contact-section" aria-labelledby="contact-heading">
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
       <div class="section-label-row">
-        <span class="mono section-tag">// 06_CONTACT</span>
+        <span class="mono section-tag" data-i18n="section.contact">// 06_CONTACT</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
       <div class="contact-inner">
         <div class="contact-text">
-          <h2 id="contact-heading">Have a decision problem worth<br><span class="accent">modeling?</span></h2>
-          <p>If you are working on a complex workflow, a scientific tool, or an applied AI system that needs more than a chatbot layer, I'd be glad to hear about it.</p>
+          <h2 id="contact-heading" data-i18n="contact.heading">Have a decision problem worth<br><span class="accent">modeling?</span></h2>
+          <p data-i18n="contact.p">If you are working on a complex workflow, a scientific tool, or an applied AI system that needs more than a chatbot layer, I'd be glad to hear about it.</p>
           <div class="contact-data">
             <div class="contact-item">
-              <span class="mono contact-label">FOCUS</span>
-              <span class="mono contact-val">Applied AI + Modeling</span>
+              <span class="mono contact-label" data-i18n="contact.focus_lbl">FOCUS</span>
+              <span class="mono contact-val" data-i18n="contact.focus_val">Applied AI + Modeling</span>
             </div>
             <div class="contact-item">
-              <span class="mono contact-label">OPEN TO</span>
-              <span class="mono contact-val">Selected Collaborations</span>
+              <span class="mono contact-label" data-i18n="contact.open_lbl">OPEN TO</span>
+              <span class="mono contact-val" data-i18n="contact.open_val">Selected Collaborations</span>
             </div>
           </div>
         </div>
         <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
           <div class="form-group">
-            <label for="contact-name" class="form-label mono">NAME</label>
+            <label for="contact-name" class="form-label mono" data-i18n="contact.form.name">NAME</label>
             <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" required autocomplete="name">
           </div>
           <div class="form-group">
-            <label for="contact-email" class="form-label mono">EMAIL</label>
+            <label for="contact-email" class="form-label mono" data-i18n="contact.form.email">EMAIL</label>
             <input type="email" id="contact-email" name="email" class="form-input" placeholder="you@organization.com" required autocomplete="email">
           </div>
           <div class="form-group">
-            <label for="contact-org" class="form-label mono">ORGANIZATION</label>
+            <label for="contact-org" class="form-label mono" data-i18n="contact.form.org">ORGANIZATION</label>
             <input type="text" id="contact-org" name="org" class="form-input" placeholder="Company, lab, or institution">
           </div>
           <div class="form-group">
-            <label for="contact-msg" class="form-label mono">PROBLEM DESCRIPTION</label>
-            <textarea id="contact-msg" name="message" class="form-input form-textarea" placeholder="Describe the workflow, decision problem, or system you are trying to build..." required rows="4"></textarea>
+            <label for="contact-msg" class="form-label mono" data-i18n="contact.form.msg">PROBLEM DESCRIPTION</label>
+            <textarea id="contact-msg" name="message" class="form-input form-textarea" placeholder="..." required rows="4"></textarea>
           </div>
-          <button type="submit" class="btn-primary btn-full" id="contact-submit-btn">START THE CONVERSATION →</button>
-          <p class="form-disclaimer mono">Just enough context to understand the problem. No spam, no theatrics.</p>
+          <button type="submit" class="btn-primary btn-full" id="contact-submit-btn" data-i18n="contact.form.btn">START THE CONVERSATION →</button>
+          <p class="form-disclaimer mono" data-i18n="contact.form.disc">Just enough context to understand the problem. No spam, no theatrics.</p>
         </form>
       </div>
     </section>
 
-    <!-- ── CAPABILITIES ── -->
-    <section id="capacidades" class="section capabilities-section" aria-labelledby="capabilities-heading">
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="section capabilities-section" aria-labelledby="capabilities-heading">
       <div class="section-label-row">
-        <span class="mono section-tag">// 07_CAPABILITIES</span>
+        <span class="mono section-tag" data-i18n="section.cap">// 07_CAPABILITIES</span>
         <div class="section-line" aria-hidden="true"></div>
       </div>
-      <h2 id="capabilities-heading" class="section-title">What I Build</h2>
+      <h2 id="capabilities-heading" class="section-title" data-i18n="cap.heading">What I Build</h2>
       <ul class="capabilities-list mono" aria-label="Capabilities">
-        <li><span class="mono">→</span> Applied decision systems</li>
-        <li><span class="mono">→</span> Mathematical modeling and simulation</li>
-        <li><span class="mono">→</span> ML and NLP pipelines</li>
-        <li><span class="mono">→</span> Agentic workflows for complex processes</li>
-        <li><span class="mono">→</span> Retrieval and structured reasoning systems</li>
-        <li><span class="mono">→</span> Scientific and analytical interfaces</li>
-        <li><span class="mono">→</span> Research-driven prototypes with real deployment paths</li>
+        <li data-i18n="cap.l1"><span class="mono">→</span> Applied decision systems</li>
+        <li data-i18n="cap.l2"><span class="mono">→</span> Mathematical modeling and simulation</li>
+        <li data-i18n="cap.l3"><span class="mono">→</span> ML and NLP pipelines</li>
+        <li data-i18n="cap.l4"><span class="mono">→</span> Agentic workflows for complex processes</li>
+        <li data-i18n="cap.l5"><span class="mono">→</span> Retrieval and structured reasoning systems</li>
+        <li data-i18n="cap.l6"><span class="mono">→</span> Scientific and analytical interfaces</li>
+        <li data-i18n="cap.l7"><span class="mono">→</span> Research-driven prototypes with real deployment paths</li>
       </ul>
     </section>
   </main>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- ── FOOTER ── -->
+  <!-- FOOTER -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <div class="footer-brand">
         <img src="rabbit.svg" alt="" class="logo-svg footer-logo" width="24" height="24" aria-hidden="true">
         <span class="mono footer-brand-name">THE VELVETEEN PROJECT</span>
       </div>
-      <p class="mono footer-tagline">APPLIED DECISION SYSTEMS LAB</p>
+      <p class="mono footer-tagline" data-i18n="footer.tagline">APPLIED DECISION SYSTEMS LAB</p>
       <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="#manifiesto" class="footer-link">Manifesto</a>
-        <a href="#modelos" class="footer-link">Projects</a>
-        <a href="#capacidades" class="footer-link">Capabilities</a>
-        <a href="#equipo" class="footer-link">Founder</a>
-        <a href="#contacto" class="footer-link">Contact</a>
+        <a href="#manifesto" class="footer-link" data-i18n="nav.manifesto">Manifesto</a>
+        <a href="#projects" class="footer-link" data-i18n="nav.projects">Projects</a>
+        <a href="#capabilities" class="footer-link" data-i18n="nav.capabilities">Capabilities</a>
+        <a href="#founder" class="footer-link" data-i18n="nav.founder">Founder</a>
+        <a href="#contact" class="footer-link" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="footer-bottom">
-        <span class="mono footer-copy">© 2026 The Velveteen Project. Founder-led. Built with rigor.</span>
-        <span class="mono footer-sig" aria-label="System status">SYS_STATUS: <span class="accent">ACTIVE</span></span>
+        <span class="mono footer-copy" data-i18n="footer.copy">© 2026 The Velveteen Project. Founder-led. Built with rigor.</span>
+        <span class="mono footer-sig" aria-label="System status" data-i18n="footer.sys">SYS_STATUS: <span class="accent">ACTIVE</span></span>
       </div>
     </div>
   </footer>

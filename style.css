@@ -214,7 +214,39 @@ ul { list-style: none; }
 .nav-link:hover { color: var(--clr-on-surface); }
 .nav-link:hover::after { width: 100%; }
 
-.nav-cta { margin-left: 2rem; }
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+}
+.lang-btn {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--clr-outline);
+  transition: color 0.2s;
+  padding: 0.2rem;
+}
+.lang-btn.active {
+  color: var(--clr-on-surface);
+}
+.lang-btn:hover {
+  color: var(--clr-primary);
+}
+.lang-divider {
+  font-size: 0.72rem;
+  color: var(--clr-outline-var);
+}
+
+.mobile-lang {
+  margin-left: 0;
+  border-bottom: 1px solid var(--clr-outline-var);
+  padding-bottom: 1rem;
+}
+
+.nav-cta { margin-left: 1.5rem; }
 
 .mobile-menu-btn {
   display: none;
@@ -305,7 +337,8 @@ ul { list-style: none; }
   padding-top: 5.5rem;
   padding-bottom: 5rem;
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 45%;
+  justify-content: space-between;
   gap: 4rem;
   align-items: flex-start;
   max-width: 1280px;
@@ -387,7 +420,7 @@ ul { list-style: none; }
 }
 .stat { display: flex; flex-direction: column; gap: 0.2rem; }
 .stat-value {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--clr-primary);
 }
@@ -597,7 +630,7 @@ ul { list-style: none; }
 }
 
 .modelo-card:hover {
-  border-color: rgba(87, 241, 219, 0.3);
+  border-color: rgba(87, 241, 219, 0.2);
   border-top-color: var(--clr-primary);
   background: var(--clr-surface-mid);
 }
@@ -677,8 +710,8 @@ ul { list-style: none; }
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 .team-card:hover {
-  border-color: rgba(87,241,219,0.3);
-  box-shadow: 0 0 40px rgba(87,241,219,0.05);
+  border-color: rgba(87,241,219,0.2);
+  box-shadow: 0 0 30px rgba(87,241,219,0.03);
 }
 .team-photo-wrapper { flex-shrink: 0; }
 .team-photo-placeholder {
@@ -781,15 +814,15 @@ ul { list-style: none; }
 }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .tech-tag {
-  color: var(--clr-outline);
+  color: var(--clr-outline-var);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   white-space: nowrap;
   padding: 0.25rem 1rem;
   border-left: 1px solid var(--clr-outline-var);
-  transition: color 0.2s;
+  transition: color 0.2s, opacity 0.2s;
 }
-.tech-tag:hover { color: var(--clr-primary); }
+.tech-tag:hover { color: var(--clr-outline); }
 
 /* ── Contact ── */
 .contact-section { max-width: 1280px; }
