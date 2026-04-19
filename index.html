@@ -16,7 +16,6 @@
 </head>
 <body>
 
-  <!-- Ambient background canvas -->
   <canvas id="grid-canvas"></canvas>
   <div class="ambient-glow glow-top-right"></div>
   <div class="ambient-glow glow-bottom-left"></div>
@@ -25,7 +24,7 @@
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#inicio" class="nav-logo" aria-label="The Velveteen Project Home">
-        <img src="VELVETEEN-2.svg" alt="Velveteen Logo" class="logo-svg" width="32" height="32">
+        <img src="rabbit.svg" alt="Velveteen rabbit mark" class="logo-svg" width="32" height="32">
         <span class="logo-text">VELVETEEN</span>
       </a>
       <div class="nav-links" role="menubar">
@@ -78,46 +77,135 @@
 
         <div class="hero-ctas">
           <a href="#manifiesto" class="btn-ghost" id="hero-manifesto-btn">READ MANIFESTO</a>
-          <a href="#modelos" class="btn-ghost" id="hero-solutions-btn">VIEW PROJECTS →</a>
+          <a href="#modelos" class="btn-ghost btn-ghost--muted" id="hero-solutions-btn">VIEW PROJECTS →</a>
         </div>
 
         <div class="hero-stats" role="list">
           <div class="stat" role="listitem">
-            <span class="stat-value mono" id="stat-latency">MODELING</span>
+            <span class="stat-value mono">MODELING</span>
             <span class="stat-label">Mathematical core</span>
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat" role="listitem">
-            <span class="stat-value mono" id="stat-uptime">ML + NLP</span>
+            <span class="stat-value mono">ML + NLP</span>
             <span class="stat-label">Applied pipelines</span>
           </div>
           <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat" role="listitem">
-            <span class="stat-value mono" id="stat-models">AGENTS</span>
+            <span class="stat-value mono">AGENTS</span>
             <span class="stat-label">Workflow orchestration</span>
           </div>
         </div>
       </div>
 
-
-      
+      <!-- ── HERO VISUAL — DECISION GRAPH ── -->
       <div class="hero-visual" aria-hidden="true">
-        <div class="hero-terminal">
-          <div class="terminal-header">
-            <span class="t-header-label mono">velveteen.frame</span>
-            <img src="rabbit.svg" class="terminal-rabbit-mark" alt="" aria-hidden="true">
-          </div>
-          <div class="terminal-body">
-            <p><span class="t-prompt">&gt;</span> velveteen frame --problem decision-workflow <span class="t-cursor">█</span></p>
-            <p><span class="t-arrow">→</span> Identifying uncertainty sources...</p>
-            <p><span class="t-check">✓</span> <span class="t-highlight">Mapped available data and constraints</span></p>
-            <p><span class="t-arrow">→</span> Designing analytical core...</p>
-            <p><span class="t-check">✓</span> <span class="t-highlight">Model + workflow architecture ready</span></p>
-            <p><span class="t-arrow">→</span> Wrapping complexity into usable interface...</p>
-            <p><span class="t-check">✓</span> <span class="t-highlight">System blueprint prepared for implementation</span></p>
-            <br>
-            <p><span class="t-circle">○</span> STATUS: <span class="t-highlight">COMPLEXITY MADE USABLE.</span></p>
-          </div>
+        <p class="graph-label mono">// DECISION GRAPH · RESOLVING</p>
+        <div class="hero-graph">
+          <svg id="decision-graph" viewBox="0 0 360 432" xmlns="http://www.w3.org/2000/svg" width="100%">
+            <defs>
+              <marker id="garrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                <path d="M2 1.5L7.5 5L2 8.5" fill="none" stroke="rgba(87,241,219,0.38)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </marker>
+            </defs>
+
+            <!-- ── RABBIT WATERMARK ── -->
+            <g class="rabbit-watermark" transform="translate(30,72) scale(1.25)" fill="none" stroke="#57f1db" stroke-width="0.7">
+              <polygon points="80,20 110,4 115,55" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="120,20 144,4 148,55" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="80,20 115,55 95,65" fill="rgba(87,241,219,0.03)"/>
+              <polygon points="148,55 120,20 140,65" fill="rgba(87,241,219,0.03)"/>
+              <polygon points="95,65 140,65 135,100" fill="rgba(87,241,219,0.05)"/>
+              <polygon points="95,65 100,100 135,100" fill="rgba(87,241,219,0.03)"/>
+              <polygon points="95,65 70,80 100,100" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="140,65 165,80 135,100" fill="rgba(87,241,219,0.04)"/>
+              <circle cx="108" cy="85" r="3" fill="#57f1db" opacity="0.7"/>
+              <circle cx="132" cy="85" r="3" fill="#57f1db" opacity="0.7"/>
+              <polygon points="70,80 100,100 65,130" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="165,80 175,130 135,100" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="100,100 135,100 120,140" fill="rgba(87,241,219,0.06)"/>
+              <polygon points="65,130 100,100 80,155" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="175,130 160,155 135,100" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="80,155 120,140 110,180" fill="rgba(87,241,219,0.05)"/>
+              <polygon points="120,140 160,155 130,180" fill="rgba(87,241,219,0.05)"/>
+              <polygon points="80,155 60,200 100,185" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="160,155 180,200 140,185" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="100,185 110,180 105,225" fill="rgba(87,241,219,0.04)"/>
+              <polygon points="130,180 140,185 135,225" fill="rgba(87,241,219,0.04)"/>
+              <circle cx="172" cy="148" r="8" fill="rgba(87,241,219,0.05)"/>
+            </g>
+
+            <!-- ── EDGES ── -->
+            <line id="ge-1" x1="163" y1="69" x2="87" y2="130" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-2" x1="180" y1="76" x2="180" y2="122" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-3" x1="197" y1="69" x2="273" y2="130" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-4" x1="79" y1="167" x2="108" y2="235" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-5" x1="169" y1="163" x2="130" y2="235" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-6" x1="191" y1="163" x2="236" y2="235" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-7" x1="281" y1="167" x2="257" y2="235" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-8" x1="131" y1="274" x2="168" y2="328" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-9" x1="235" y1="274" x2="194" y2="328" stroke="rgba(87,241,219,0.3)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+            <line id="ge-10" x1="180" y1="370" x2="180" y2="400" stroke="rgba(87,241,219,0.45)" stroke-width="0.8" marker-end="url(#garrow)" stroke-dasharray="500" stroke-dashoffset="500"/>
+
+            <!-- ── NODES ── -->
+
+            <!-- PROBLEM -->
+            <g id="gn-prob" style="opacity:0">
+              <circle cx="180" cy="54" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.55)" stroke-width="1"/>
+              <text x="180" y="51" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#e5e1e4" letter-spacing="0.06em">PROBLEM</text>
+              <text x="180" y="62" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">frame</text>
+            </g>
+
+            <!-- DATA -->
+            <g id="gn-data" style="opacity:0">
+              <circle cx="70" cy="148" r="20" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
+              <text x="70" y="145" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7.5" font-weight="500" fill="#bacac5" letter-spacing="0.06em">DATA</text>
+              <text x="70" y="157" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">sources</text>
+            </g>
+
+            <!-- UNCERTAIN -->
+            <g id="gn-unc" style="opacity:0">
+              <circle cx="180" cy="142" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
+              <text x="180" y="139" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" font-weight="500" fill="#bacac5" letter-spacing="0.05em">UNCERTAINTY</text>
+              <text x="180" y="151" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">mapping</text>
+            </g>
+
+            <!-- BOUNDS / CONSTRAINTS -->
+            <g id="gn-con" style="opacity:0">
+              <circle cx="290" cy="148" r="20" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
+              <text x="290" y="145" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6.5" font-weight="500" fill="#bacac5" letter-spacing="0.04em">CONSTRAINTS</text>
+              <text x="290" y="157" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">bounds</text>
+            </g>
+
+            <!-- MODEL CORE -->
+            <g id="gn-model" style="opacity:0">
+              <circle cx="118" cy="256" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
+              <text x="118" y="251" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.05em">MODEL</text>
+              <text x="118" y="262" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.05em">CORE</text>
+            </g>
+
+            <!-- PIPELINE -->
+            <g id="gn-pipe" style="opacity:0">
+              <circle cx="248" cy="256" r="22" fill="#1c1b1d" stroke="rgba(87,241,219,0.28)" stroke-width="0.8"/>
+              <text x="248" y="251" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6.5" font-weight="500" fill="#bacac5" letter-spacing="0.04em">ML + NLP</text>
+              <text x="248" y="263" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#859490">pipeline</text>
+            </g>
+
+            <!-- DECISION — active, pulsing -->
+            <g id="gn-dec" style="opacity:0">
+              <circle class="graph-pulse-ring" cx="180" cy="348" r="28" fill="none" stroke="#57f1db" stroke-width="0.5"/>
+              <circle cx="180" cy="348" r="22" fill="rgba(87,241,219,0.07)" stroke="#57f1db" stroke-width="1.5"/>
+              <text x="180" y="345" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7.5" font-weight="500" fill="#57f1db" letter-spacing="0.08em">DECISION</text>
+              <text x="180" y="357" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="6" fill="#57f1db" opacity="0.6">output</text>
+            </g>
+
+            <!-- ACTION -->
+            <g id="gn-act" style="opacity:0">
+              <circle cx="180" cy="416" r="16" fill="#1c1b1d" stroke="rgba(87,241,219,0.22)" stroke-width="0.8"/>
+              <text x="180" y="413" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="7" font-weight="500" fill="#bacac5" letter-spacing="0.08em">ACTION</text>
+              <text x="180" y="423" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="5.5" fill="#859490">deploy</text>
+            </g>
+          </svg>
         </div>
       </div>
 
@@ -152,46 +240,7 @@
             </div>
           </div>
         </div>
-        <div class="manifesto-art" aria-hidden="true">
-          <div class="rabbit-art-block">
-            <svg class="rabbit-svg-art" viewBox="0 0 240 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Large geometric rabbit — inspired by the logo -->
-              <!-- Ears -->
-              <polygon points="80,20 110,4 115,55" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1.2"/>
-              <polygon points="120,20 144,4 148,55" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1.2"/>
-              <polygon points="80,20 115,55 95,65" fill="rgba(87,241,219,0.03)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="148,55 120,20 140,65" fill="rgba(87,241,219,0.03)" stroke="#57f1db" stroke-width="1"/>
-              <!-- Head -->
-              <polygon points="95,65 140,65 135,100" fill="rgba(87,241,219,0.05)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="95,65 100,100 135,100" fill="rgba(87,241,219,0.03)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="95,65 70,80 100,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="140,65 165,80 135,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <!-- Eye -->
-              <circle cx="108" cy="85" r="3" fill="#57f1db" opacity="0.9"/>
-              <circle cx="132" cy="85" r="3" fill="#57f1db" opacity="0.9"/>
-              <!-- Body -->
-              <polygon points="70,80 100,100 65,130" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="165,80 175,130 135,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="100,100 135,100 120,140" fill="rgba(87,241,219,0.06)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="65,130 100,100 80,155" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="175,130 160,155 135,100" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="80,155 120,140 110,180" fill="rgba(87,241,219,0.05)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="120,140 160,155 130,180" fill="rgba(87,241,219,0.05)" stroke="#57f1db" stroke-width="1"/>
-              <!-- Legs -->
-              <polygon points="80,155 60,200 100,185" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="160,155 180,200 140,185" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="100,185 110,180 105,225" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <polygon points="130,180 140,185 135,225" fill="rgba(87,241,219,0.04)" stroke="#57f1db" stroke-width="1"/>
-              <!-- Tail -->
-              <circle cx="172" cy="148" r="8" fill="rgba(87,241,219,0.06)" stroke="#57f1db" stroke-width="1"/>
-              <!-- Decorative dots at vertices -->
-              <circle cx="110" cy="4" r="1.5" fill="#57f1db" opacity="0.5"/>
-              <circle cx="144" cy="4" r="1.5" fill="#57f1db" opacity="0.5"/>
-              <circle cx="60" cy="200" r="2" fill="#57f1db" opacity="0.4"/>
-              <circle cx="180" cy="200" r="2" fill="#57f1db" opacity="0.4"/>
-            </svg>
-            <p class="rabbit-caption mono">// THE VELVETEEN RABBIT<br>A model only becomes real<br>when it enters use.</p>
-          </div>
+        <div class="manifesto-aside" aria-hidden="true">
           <div class="manifesto-data-block">
             <span class="mono data-label">MISSION</span>
             <span class="mono data-val">Turn rigorous ideas into usable tools.</span>
@@ -247,7 +296,7 @@
       </div>
     </section>
 
-    <!-- // 03_PROJECTS -->
+    <!-- ── PROJECTS ── -->
     <section id="modelos" class="section modelos-section" aria-labelledby="modelos-heading">
       <div class="section-label-row">
         <span class="mono section-tag">// 03_PROJECTS</span>
@@ -257,48 +306,32 @@
       <div class="modelos-grid">
         <div class="modelo-card">
           <div class="modelo-card__id">PROJECT_01 // PROTOTYPE</div>
-          <div class="modelo-card__icon">
-            <i class="fa-solid fa-chart-line"></i>
-          </div>
           <h3 class="modelo-card__name">STOCHASTOGREEN</h3>
-          <p class="modelo-card__desc">
-            A climate transition risk prototype built around stochastic modeling,
-            simulation, and AI-assisted interpretation.
-          </p>
+          <p class="modelo-card__desc">A climate transition risk prototype built around stochastic modeling, simulation, and AI-assisted interpretation.</p>
           <div class="modelo-card__tags">
             <span class="tag">STOCHASTIC MODELING</span>
             <span class="tag">RISK ANALYSIS</span>
             <span class="tag">SIMULATION</span>
           </div>
-          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> LAUNCH DEMO →
-          </a>
+          <a class="modelo-card__link" href="https://stochasto-green.vercel.app/" target="_blank" rel="noopener">LAUNCH DEMO →</a>
           <span class="modelo-card__env">VERCEL_DEPLOY</span>
         </div>
         <div class="modelo-card">
           <div class="modelo-card__id">PROJECT_02 // PROTOTYPE</div>
-          <div class="modelo-card__icon">
-            <i class="fa-solid fa-leaf"></i>
-          </div>
           <h3 class="modelo-card__name">ECOAGENT</h3>
-          <p class="modelo-card__desc">
-            A stochastic risk system for ecological and environmental scenarios,
-            combining forecasting, structured reasoning, and agentic workflows.
-          </p>
+          <p class="modelo-card__desc">A stochastic risk system for ecological and environmental scenarios, combining forecasting, structured reasoning, and agentic workflows.</p>
           <div class="modelo-card__tags">
             <span class="tag">ENVIRONMENTAL RISK</span>
             <span class="tag">AGENTIC WORKFLOWS</span>
             <span class="tag">APPLIED ML</span>
           </div>
-          <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> LAUNCH DEMO →
-          </a>
+          <a class="modelo-card__link" href="https://eco-agent-five.vercel.app/" target="_blank" rel="noopener">LAUNCH DEMO →</a>
           <span class="modelo-card__env">VERCEL_DEPLOY</span>
         </div>
       </div>
     </section>
 
-    <!-- ── EQUIPO ── -->
+    <!-- ── FOUNDER ── -->
     <section id="equipo" class="section team-section" aria-labelledby="team-heading">
       <div class="section-label-row">
         <span class="mono section-tag">// 04_FOUNDER</span>
@@ -335,7 +368,7 @@
       </div>
     </section>
 
-    <!-- ── IMPACT / TECH ── -->
+    <!-- ── STACK ── -->
     <section class="section impact-section" aria-label="Technology stack">
       <div class="section-label-row">
         <span class="mono section-tag">// 05_STACK</span>
@@ -352,12 +385,11 @@
           <span class="mono tech-tag">FASTAPI</span>
           <span class="mono tech-tag">DOCKER</span>
           <span class="mono tech-tag">KUBERNETES</span>
-          <span class="mono tech-tag">TENSOR FLOW</span>
+          <span class="mono tech-tag">TENSORFLOW</span>
           <span class="mono tech-tag">HUGGING FACE</span>
           <span class="mono tech-tag">OLLAMA</span>
           <span class="mono tech-tag">POSTGRES</span>
           <span class="mono tech-tag">PGVECTOR</span>
-          <!-- Duplicate for infinite loop -->
           <span class="mono tech-tag">GEMINI PRO</span>
           <span class="mono tech-tag">LANGCHAIN</span>
           <span class="mono tech-tag">FIREBASE</span>
@@ -366,7 +398,7 @@
           <span class="mono tech-tag">FASTAPI</span>
           <span class="mono tech-tag">DOCKER</span>
           <span class="mono tech-tag">KUBERNETES</span>
-          <span class="mono tech-tag">TENSOR FLOW</span>
+          <span class="mono tech-tag">TENSORFLOW</span>
           <span class="mono tech-tag">HUGGING FACE</span>
           <span class="mono tech-tag">OLLAMA</span>
           <span class="mono tech-tag">POSTGRES</span>
@@ -385,7 +417,7 @@
       <div class="contact-inner">
         <div class="contact-text">
           <h2 id="contact-heading">Have a decision problem worth<br><span class="accent">modeling?</span></h2>
-          <p>If you are working on a complex workflow, a scientific tool, or an applied AI system that needs more than a chatbot layer, I’d be glad to hear about it.</p>
+          <p>If you are working on a complex workflow, a scientific tool, or an applied AI system that needs more than a chatbot layer, I'd be glad to hear about it.</p>
           <div class="contact-data">
             <div class="contact-item">
               <span class="mono contact-label">FOCUS</span>
@@ -420,7 +452,7 @@
       </div>
     </section>
 
-    <!-- // 07_CAPACIDADES -->
+    <!-- ── CAPABILITIES ── -->
     <section id="capacidades" class="section capabilities-section" aria-labelledby="capabilities-heading">
       <div class="section-label-row">
         <span class="mono section-tag">// 07_CAPABILITIES</span>
@@ -438,16 +470,17 @@
       </ul>
     </section>
   </main>
-  <!-- Font Awesome (CDN) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- ── FOOTER ── -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="VELVETEEN-2.svg" alt="" class="logo-svg" width="24" height="24" aria-hidden="true">
+        <img src="rabbit.svg" alt="" class="logo-svg footer-logo" width="24" height="24" aria-hidden="true">
         <span class="mono footer-brand-name">THE VELVETEEN PROJECT</span>
       </div>
-        <p class="mono footer-tagline">APPLIED DECISION SYSTEMS LAB</p>
+      <p class="mono footer-tagline">APPLIED DECISION SYSTEMS LAB</p>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="#manifiesto" class="footer-link">Manifesto</a>
         <a href="#modelos" class="footer-link">Projects</a>
@@ -463,5 +496,78 @@
   </footer>
 
   <script src="main.js"></script>
+
+  <!-- ── DECISION GRAPH ANIMATION ── -->
+  <script>
+  (function () {
+    var nodeIds = ['gn-prob','gn-data','gn-unc','gn-con','gn-model','gn-pipe','gn-dec','gn-act'];
+    var edgeIds = ['ge-1','ge-2','ge-3','ge-4','ge-5','ge-6','ge-7','ge-8','ge-9','ge-10'];
+
+    var seq = [
+      {t:'n', id:'gn-prob',  ms:350},
+      {t:'e', id:'ge-1',     ms:700},
+      {t:'e', id:'ge-2',     ms:800},
+      {t:'e', id:'ge-3',     ms:900},
+      {t:'n', id:'gn-data',  ms:920},
+      {t:'n', id:'gn-unc',   ms:1050},
+      {t:'n', id:'gn-con',   ms:1150},
+      {t:'e', id:'ge-4',     ms:1500},
+      {t:'e', id:'ge-5',     ms:1600},
+      {t:'e', id:'ge-6',     ms:1700},
+      {t:'e', id:'ge-7',     ms:1780},
+      {t:'n', id:'gn-model', ms:1800},
+      {t:'n', id:'gn-pipe',  ms:1950},
+      {t:'e', id:'ge-8',     ms:2300},
+      {t:'e', id:'ge-9',     ms:2400},
+      {t:'n', id:'gn-dec',   ms:2600},
+      {t:'e', id:'ge-10',    ms:3100},
+      {t:'n', id:'gn-act',   ms:3300}
+    ];
+
+    function reset() {
+      nodeIds.forEach(function(id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.style.transition = 'none';
+        el.style.opacity = '0';
+      });
+      edgeIds.forEach(function(id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.style.transition = 'none';
+        el.setAttribute('stroke-dashoffset', '500');
+      });
+    }
+
+    function run() {
+      reset();
+      requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+          seq.forEach(function(item) {
+            setTimeout(function() {
+              var el = document.getElementById(item.id);
+              if (!el) return;
+              if (item.t === 'n') {
+                el.style.transition = 'opacity 0.5s ease';
+                el.style.opacity = '1';
+              } else {
+                el.style.transition = 'stroke-dashoffset 0.7s ease';
+                el.setAttribute('stroke-dashoffset', '0');
+              }
+            }, item.ms);
+          });
+          setTimeout(run, 8800);
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() { setTimeout(run, 900); });
+    } else {
+      setTimeout(run, 900);
+    }
+  })();
+  </script>
+
 </body>
 </html>
