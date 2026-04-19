@@ -203,20 +203,20 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    submitBtn.textContent = 'PROCESANDO...';
+    submitBtn.textContent = 'SENDING...';
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
     // Simulate async submission (replace with real endpoint)
     await new Promise(r => setTimeout(r, 1600));
 
-    submitBtn.textContent = '✓ PROTOCOLO INICIADO';
+    submitBtn.textContent = '✓ MESSAGE SENT';
     submitBtn.style.background = '#64e891';
     submitBtn.style.color = '#001a09';
 
     setTimeout(() => {
       form.reset();
-      submitBtn.textContent = 'INICIAR PROTOCOLO →';
+      submitBtn.textContent = 'START THE CONVERSATION →';
       submitBtn.disabled = false;
       submitBtn.style.opacity = '';
       submitBtn.style.background = '';
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Scroll progress line ────────────────────────────
   const progressBar = document.createElement('div');
   progressBar.setAttribute('role', 'progressbar');
-  progressBar.setAttribute('aria-label', 'Progreso de lectura');
+  progressBar.setAttribute('aria-label', 'Reading progress');
   progressBar.style.cssText = `
     position:fixed; top:0; left:0; height:2px; 
     background:var(--clr-primary); z-index:2000; 
@@ -290,10 +290,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroStats) statsObs.observe(heroStats);
 
   function animateStats() {
-    // Already correct values, just add a glitch flicker effect
+    // Glitch flicker for numeric-style stats only (skip word labels)
     const vals = document.querySelectorAll('.stat-value');
     vals.forEach(v => {
       const original = v.textContent;
+      if (/[a-z]/i.test(original)) return;
       let ticks = 0;
       const iv = setInterval(() => {
         v.textContent = generateGlitch(original);
@@ -327,9 +328,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   console.log(
-    '%c THE VELVETEEN PROJECT %c Engineering Computational Sovereignty',
+    '%c THE VELVETEEN PROJECT %c Applied Decision Systems Lab',
     'background:#57f1db;color:#003731;font-weight:700;padding:4px 8px;font-family:monospace;',
     'color:#57f1db;font-family:monospace;padding:4px 0;'
   );
-  console.log('%c Hola, explorador 👋 — velveteen.run/careers', 'color:#859490;font-family:monospace;font-size:11px;');
+  console.log('%c Thanks for opening the console.', 'color:#859490;font-family:monospace;font-size:11px;');
 });
