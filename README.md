@@ -57,3 +57,5 @@ To protect the integrity of the lab's identity, the following are strictly enfor
 - **No inflated claims:** Language must remain precise, restrained, and factual.
 - **No noisy sci-fi spectacle:** Animations must be slow, deliberate, and respect `prefers-reduced-motion`.
 - **No changes that weaken credibility:** When in doubt, prefer less UI and more structure.
+
+*For product-specific identity management and cross-brand audits, see the [Brand Coherence & Pruning Guide](docs/brand-coherence-pruning-guide.md).*
