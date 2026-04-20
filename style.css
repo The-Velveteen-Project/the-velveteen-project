@@ -1041,6 +1041,16 @@ ul { list-style: none; }
   .step-connector { display: none; }
   .method-step:nth-child(3) { border-top: none; }
   .method-step:last-child { border-right: 1px solid var(--clr-outline-var); }
+  
+  /* Manifesto Responsive Fix */
+  .manifesto-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .manifesto-aside {
+    position: static;
+    order: 2;
+  }
 }
 
 /* Tablet portrait / large mobile */
@@ -1066,7 +1076,7 @@ ul { list-style: none; }
   .wordmark-name { font-size: clamp(1.7rem, 6vw, 2.8rem); }
 
   .manifesto-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .manifesto-aside { order: -1; }
+  .manifesto-aside { order: 2; }
   .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .team-grid { grid-template-columns: 1fr; gap: 1.25rem; }
   .capabilities-list { grid-template-columns: 1fr; }
